@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <hint/>
+        <name>EthSign</name>
+        <order/>
+        <roles>x_snc_ethsign.keys_user</roles>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>admin2</sys_created_by>
+        <sys_created_on>2020-10-30 16:03:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>83281f6b1b04a01064bf11fc2d4bcbf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EthSign</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="EthSign" source="x_snc_ethsign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name>sys_ui_application_83281f6b1b04a01064bf11fc2d4bcbf4</sys_update_name>
+        <sys_updated_by>admin2</sys_updated_by>
+        <sys_updated_on>2020-10-30 16:03:58</sys_updated_on>
+    </sys_ui_application>
+</record_update>
