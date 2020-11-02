@@ -4,7 +4,7 @@
         <hint/>
         <name>EthSign</name>
         <order/>
-        <roles>x_snc_ethsign.keys_user</roles>
+        <roles/>
         <sys_class_name>sys_ui_application</sys_class_name>
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 16:03:58</sys_created_on>

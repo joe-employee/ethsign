@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Keys" max_length="40" name="x_snc_ethsign_keys" sizeclass="1" type="collection">
-        <element label="Address" max_length="42" name="address" type="string"/>
-        <element label="Private Key" max_length="100" name="private_key" type="string"/>
-    </element>
-</database>
