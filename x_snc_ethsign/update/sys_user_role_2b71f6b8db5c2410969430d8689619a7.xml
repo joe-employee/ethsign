@@ -6,21 +6,21 @@
         <elevated_privilege>false</elevated_privilege>
         <grantable>true</grantable>
         <includes_roles/>
-        <name>x_snc_ethsign.admin</name>
+        <name>x_snc_ethsign.transaction_user</name>
         <requires_subscription>-1</requires_subscription>
-        <scoped_admin>true</scoped_admin>
-        <suffix>x_snc_ethsign.admin</suffix>
+        <scoped_admin>false</scoped_admin>
+        <suffix>transaction_user</suffix>
         <sys_class_name>sys_user_role</sys_class_name>
-        <sys_created_by>admin2</sys_created_by>
-        <sys_created_on>2020-10-30 16:02:15</sys_created_on>
-        <sys_id>31c71b6b1b04a01064bf11fc2d4bcbd7</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>x_snc_ethsign.admin</sys_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-03 10:27:22</sys_created_on>
+        <sys_id>2b71f6b8db5c2410969430d8689619a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_ethsign.transaction_user</sys_name>
         <sys_package display_value="EthSign" source="x_snc_ethsign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_package>
         <sys_policy/>
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
-        <sys_update_name>sys_user_role_31c71b6b1b04a01064bf11fc2d4bcbd7</sys_update_name>
+        <sys_update_name>sys_user_role_2b71f6b8db5c2410969430d8689619a7</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-02 10:13:12</sys_updated_on>
+        <sys_updated_on>2020-11-03 10:27:22</sys_updated_on>
     </sys_user_role>
 </record_update>
