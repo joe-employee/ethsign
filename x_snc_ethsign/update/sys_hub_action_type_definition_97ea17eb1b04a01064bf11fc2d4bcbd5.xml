@@ -12,21 +12,21 @@
         <description/>
         <ih_action>false</ih_action>
         <internal_name>sign_transaction</internal_name>
-        <label_cache>[{"name":"{{action.from}}","label":"action➛from","type":"action","ref":""},{"name":"{{action.to}}","label":"action➛to","type":"action","ref":""},{"name":"{{action.gas}}","label":"action➛gas","type":"action","ref":""},{"name":"{{action.gasprice}}","label":"action➛gasprice","type":"action","ref":""},{"name":"{{action.value}}","label":"action➛value","type":"action","ref":""},{"name":"{{action.nonce}}","label":"action➛nonce","type":"action","ref":""},{"name":"{{action.data}}","label":"action➛data","type":"action","ref":""},{"name":"{{action.chainid}}","label":"action➛chainid","type":"action","ref":""},{"name":"{{action.payload2}}","label":"action➛payload2","type":"action","ref":""},{"name":"{{action.payload}}","label":"action➛payload","type":"action","ref":""},{"name":"{{step[2880e4ba-0928-400d-ad9b-06141b281096].variable}}","label":"step➛Script step➛variable","type":"step","ref":""},{"name":"{{step[2880e4ba-0928-400d-ad9b-06141b281096].txraw}}","label":"step➛Script step➛txraw","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>a5e92fc4dbac2410969430d868961924</latest_snapshot>
+        <label_cache>[{"name":"{{action.from}}","label":"action➛from","type":"action","ref":""},{"name":"{{action.to}}","label":"action➛to","type":"action","ref":""},{"name":"{{action.gas}}","label":"action➛gas","type":"action","ref":""},{"name":"{{action.gasprice}}","label":"action➛gasprice","type":"action","ref":""},{"name":"{{action.value}}","label":"action➛value","type":"action","ref":""},{"name":"{{action.nonce}}","label":"action➛nonce","type":"action","ref":""},{"name":"{{action.data}}","label":"action➛data","type":"action","ref":""},{"name":"{{action.chainid}}","label":"action➛chainid","type":"action","ref":""},{"name":"{{action.payload2}}","label":"action➛payload2","type":"action","ref":""},{"name":"{{step[2880e4ba-0928-400d-ad9b-06141b281096].variable}}","label":"step➛Script step➛variable","type":"step","ref":""},{"name":"{{step[2880e4ba-0928-400d-ad9b-06141b281096].txraw}}","label":"step➛Script step➛txraw","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>5f040f41dbe8a410969430d868961924</latest_snapshot>
         <master_snapshot>83ee9f6f1b04a01064bf11fc2d4bcb26</master_snapshot>
         <name>Sign Transaction</name>
         <natlang/>
         <outputs/>
         <outputs/>
-        <state>draft</state>
+        <state>published</state>
         <sys_class_name>sys_hub_action_type_definition</sys_class_name>
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 16:16:00</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>97ea17eb1b04a01064bf11fc2d4bcbd5</sys_id>
-        <sys_mod_count>148</sys_mod_count>
+        <sys_mod_count>174</sys_mod_count>
         <sys_name>Sign Transaction</sys_name>
         <sys_overrides/>
         <sys_package display_value="EthSign" source="x_snc_ethsign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_97ea17eb1b04a01064bf11fc2d4bcbd5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-13 17:31:31</sys_updated_on>
+        <sys_updated_on>2020-11-16 16:42:40</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -70,10 +70,10 @@
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 16:25:54</sys_created_on>
         <sys_id>983ddb2f1b04a01064bf11fc2d4bcbea</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-13 17:31:31</sys_updated_on>
+        <sys_updated_on>2020-11-16 16:42:35</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=983ddb2f1b04a01064bf11fc2d4bcbea"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -98,27 +98,27 @@
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 16:25:55</sys_created_on>
         <sys_id>ac3d1f2f1b04a01064bf11fc2d4bcb2c</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-13 17:31:31</sys_updated_on>
+        <sys_updated_on>2020-11-16 16:42:35</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
-gs.info("payload: " + inputs.payload);
+gs.info("HERE: " + inputs.payload2.toString());
   
-//gs.include("ethjs-signer");
+gs.include("ethjs-signer");
 
-//var payload2 = JSON.parse(inputs.payload2.toString());
+var payload2 = JSON.parse(inputs.payload2.toString());
   
-//var gr = new GlideRecord('x_snc_ethsign_key');
-//gr.addQuery('address',payload2.from.toString());
-//gr.query();
-//if (gr.next()) {
-//  var pk = gr.private_key;
-//}
+var gr = new GlideRecord('x_snc_ethsign_key');
+gr.addQuery('address',payload2.from.toString());
+gr.query();
+if (gr.next()) {
+  var pk = gr.private_key;
+}
   
-//outputs.txraw = ethSigner.sign(payload2, pk.toString(), false);
+outputs.txraw = ethSigner.sign(payload2, pk.toString(), false);
   
-//gs.info(outputs.txraw);
+gs.info(outputs.txraw);
 })(inputs, outputs);
 </value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
@@ -214,11 +214,11 @@ gs.info("payload: " + inputs.payload);
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-13 16:53:31</sys_created_on>
         <sys_id>d9c96bc4dbac2410969430d868961950</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-13 16:53:31</sys_updated_on>
+        <sys_updated_on>2020-11-16 16:33:58</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_983ddb2f1b04a01064bf11fc2d4bcbea</table>
-        <value>{{action.payload}}</value>
+        <value>{{action.payload2}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>payload2</field>
@@ -268,7 +268,7 @@ gs.info("payload: " + inputs.payload);
         <table>var__m_sys_hub_step_ext_input_983ddb2f1b04a01064bf11fc2d4bcbea</table>
         <value>{{action.value}}</value>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=983ddb2f1b04a01064bf11fc2d4bcbea^sys_idNOT IN11c96bc4dbac2410969430d868961947"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=983ddb2f1b04a01064bf11fc2d4bcbea^sys_idNOT IN03220b01dbe8a410969430d868961987"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -297,7 +297,7 @@ gs.info("payload: " + inputs.payload);
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>payload</element>
+        <element>payload2</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
@@ -329,8 +329,8 @@ gs.info("payload: " + inputs.payload);
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-13 16:53:31</sys_created_on>
-        <sys_id>11c96bc4dbac2410969430d868961947</sys_id>
+        <sys_created_on>2020-11-16 16:34:25</sys_created_on>
+        <sys_id>03220b01dbe8a410969430d868961987</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -338,7 +338,7 @@ gs.info("payload: " + inputs.payload);
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-13 16:53:31</sys_updated_on>
+        <sys_updated_on>2020-11-16 16:34:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -432,12 +432,12 @@ gs.info("payload: " + inputs.payload);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_action_input action="delete_multiple" query="model=97ea17eb1b04a01064bf11fc2d4bcbd5^sys_idNOT IN811e6388dbac2410969430d8689619b5"/>
+    <sys_hub_action_input action="delete_multiple" query="model=97ea17eb1b04a01064bf11fc2d4bcbd5^sys_idNOT IN57e38b41dbe8a410969430d868961973"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string_full_utf8,uiTypeLabel=String (Full UTF-8),uiUniqueId=b688772d-45ef-4ef9-b2f3-9a984b001f7b</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b688772d-45ef-4ef9-b2f3-9a984b001f7b</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -461,15 +461,15 @@ gs.info("payload: " + inputs.payload);
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>payload</element>
+        <element>payload2</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="">string_full_utf8</internal_type>
-        <label>payload</label>
+        <internal_type display_value="String">string</internal_type>
+        <label>payload2</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Sign Transaction">97ea17eb1b04a01064bf11fc2d4bcbd5</model>
@@ -493,8 +493,8 @@ gs.info("payload: " + inputs.payload);
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-13 17:12:20</sys_created_on>
-        <sys_id>811e6388dbac2410969430d8689619b5</sys_id>
+        <sys_created_on>2020-11-16 16:42:05</sys_created_on>
+        <sys_id>57e38b41dbe8a410969430d868961973</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -502,7 +502,7 @@ gs.info("payload: " + inputs.payload);
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-13 17:12:20</sys_updated_on>
+        <sys_updated_on>2020-11-16 16:42:05</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -615,10 +615,10 @@ gs.info("payload: " + inputs.payload);
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 16:25:54</sys_created_on>
         <sys_id>983ddb2f1b04a01064bf11fc2d4bcbea</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-13 17:31:31</sys_updated_on>
+        <sys_updated_on>2020-11-16 16:42:35</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=983ddb2f1b04a01064bf11fc2d4bcbea"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -643,27 +643,27 @@ gs.info("payload: " + inputs.payload);
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 16:25:55</sys_created_on>
         <sys_id>ac3d1f2f1b04a01064bf11fc2d4bcb2c</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-13 17:31:31</sys_updated_on>
+        <sys_updated_on>2020-11-16 16:42:35</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
-gs.info("payload: " + inputs.payload);
+gs.info("HERE: " + inputs.payload2.toString());
   
-//gs.include("ethjs-signer");
+gs.include("ethjs-signer");
 
-//var payload2 = JSON.parse(inputs.payload2.toString());
+var payload2 = JSON.parse(inputs.payload2.toString());
   
-//var gr = new GlideRecord('x_snc_ethsign_key');
-//gr.addQuery('address',payload2.from.toString());
-//gr.query();
-//if (gr.next()) {
-//  var pk = gr.private_key;
-//}
+var gr = new GlideRecord('x_snc_ethsign_key');
+gr.addQuery('address',payload2.from.toString());
+gr.query();
+if (gr.next()) {
+  var pk = gr.private_key;
+}
   
-//outputs.txraw = ethSigner.sign(payload2, pk.toString(), false);
+outputs.txraw = ethSigner.sign(payload2, pk.toString(), false);
   
-//gs.info(outputs.txraw);
+gs.info(outputs.txraw);
 })(inputs, outputs);
 </value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
@@ -759,11 +759,11 @@ gs.info("payload: " + inputs.payload);
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-11-13 16:53:31</sys_created_on>
         <sys_id>d9c96bc4dbac2410969430d868961950</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-13 16:53:31</sys_updated_on>
+        <sys_updated_on>2020-11-16 16:33:58</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_983ddb2f1b04a01064bf11fc2d4bcbea</table>
-        <value>{{action.payload}}</value>
+        <value>{{action.payload2}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>payload2</field>
@@ -813,7 +813,7 @@ gs.info("payload: " + inputs.payload);
         <table>var__m_sys_hub_step_ext_input_983ddb2f1b04a01064bf11fc2d4bcbea</table>
         <value>{{action.value}}</value>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=983ddb2f1b04a01064bf11fc2d4bcbea^sys_idNOT IN11c96bc4dbac2410969430d868961947"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=983ddb2f1b04a01064bf11fc2d4bcbea^sys_idNOT IN03220b01dbe8a410969430d868961987"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -842,7 +842,7 @@ gs.info("payload: " + inputs.payload);
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>payload</element>
+        <element>payload2</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
@@ -874,8 +874,8 @@ gs.info("payload: " + inputs.payload);
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-13 16:53:31</sys_created_on>
-        <sys_id>11c96bc4dbac2410969430d868961947</sys_id>
+        <sys_created_on>2020-11-16 16:34:25</sys_created_on>
+        <sys_id>03220b01dbe8a410969430d868961987</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -883,7 +883,7 @@ gs.info("payload: " + inputs.payload);
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-13 16:53:31</sys_updated_on>
+        <sys_updated_on>2020-11-16 16:34:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -977,19 +977,19 @@ gs.info("payload: " + inputs.payload);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_97ea17eb1b04a01064bf11fc2d4bcbd5^sys_idNOT IN5d1e6388dbac2410969430d8689619b9"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_97ea17eb1b04a01064bf11fc2d4bcbd5^sys_idNOT IN13e38b41dbe8a410969430d868961978"/>
     <sys_documentation action="INSERT_OR_UPDATE">
-        <element>payload</element>
+        <element>payload2</element>
         <help/>
         <hint/>
-        <label>payload</label>
+        <label>payload2</label>
         <language>en</language>
         <name>var__m_sys_hub_action_input_97ea17eb1b04a01064bf11fc2d4bcbd5</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-13 17:12:21</sys_created_on>
-        <sys_id>5d1e6388dbac2410969430d8689619b9</sys_id>
+        <sys_created_on>2020-11-16 16:42:05</sys_created_on>
+        <sys_id>13e38b41dbe8a410969430d868961978</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="EthSign" source="x_snc_ethsign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_package>
@@ -997,7 +997,7 @@ gs.info("payload: " + inputs.payload);
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-13 17:12:21</sys_updated_on>
+        <sys_updated_on>2020-11-16 16:42:05</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -1029,17 +1029,17 @@ gs.info("payload: " + inputs.payload);
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Sign Transaction">97ea17eb1b04a01064bf11fc2d4bcbd5</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"01fedf6f1b04a01064bf11fc2d4bcb39","name":"plan"}}</plan>
-        <snapshot>a5e92fc4dbac2410969430d868961924</snapshot>
+        <snapshot>5f040f41dbe8a410969430d868961924</snapshot>
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 16:33:36</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>01fedf6f1b04a01064bf11fc2d4bcb39</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-13 16:54:07</sys_updated_on>
+        <sys_updated_on>2020-11-16 16:42:42</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>package_private</access>
@@ -1052,7 +1052,7 @@ gs.info("payload: " + inputs.payload);
         <copied_from_name/>
         <description/>
         <internal_name>sign_transaction</internal_name>
-        <label_cache>[{"name":"{{action.from}}","label":"action➛from","type":"action","ref":""},{"name":"{{action.to}}","label":"action➛to","type":"action","ref":""},{"name":"{{action.gas}}","label":"action➛gas","type":"action","ref":""},{"name":"{{action.gasprice}}","label":"action➛gasprice","type":"action","ref":""},{"name":"{{action.value}}","label":"action➛value","type":"action","ref":""},{"name":"{{action.nonce}}","label":"action➛nonce","type":"action","ref":""},{"name":"{{action.data}}","label":"action➛data","type":"action","ref":""},{"name":"{{action.chainid}}","label":"action➛chainid","type":"action","ref":""},{"name":"{{action.payload2}}","label":"action➛payload2","type":"action","ref":""},{"name":"{{action.payload}}","label":"action➛payload","type":"action","ref":""},{"name":"{{step[2880e4ba-0928-400d-ad9b-06141b281096].variable}}","label":"step➛Script step➛variable","type":"step","ref":""},{"name":"{{step[2880e4ba-0928-400d-ad9b-06141b281096].txraw}}","label":"step➛Script step➛txraw","type":"step","ref":""}]</label_cache>
+        <label_cache>[{"name":"{{action.from}}","label":"action➛from","type":"action","ref":""},{"name":"{{action.to}}","label":"action➛to","type":"action","ref":""},{"name":"{{action.gas}}","label":"action➛gas","type":"action","ref":""},{"name":"{{action.gasprice}}","label":"action➛gasprice","type":"action","ref":""},{"name":"{{action.value}}","label":"action➛value","type":"action","ref":""},{"name":"{{action.nonce}}","label":"action➛nonce","type":"action","ref":""},{"name":"{{action.data}}","label":"action➛data","type":"action","ref":""},{"name":"{{action.chainid}}","label":"action➛chainid","type":"action","ref":""},{"name":"{{action.payload2}}","label":"action➛payload2","type":"action","ref":""},{"name":"{{step[2880e4ba-0928-400d-ad9b-06141b281096].variable}}","label":"step➛Script step➛variable","type":"step","ref":""},{"name":"{{step[2880e4ba-0928-400d-ad9b-06141b281096].txraw}}","label":"step➛Script step➛txraw","type":"step","ref":""}]</label_cache>
         <master>true</master>
         <name>Sign Transaction</name>
         <natlang/>
@@ -1065,7 +1065,7 @@ gs.info("payload: " + inputs.payload);
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>83ee9f6f1b04a01064bf11fc2d4bcb26</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1073,7 +1073,7 @@ gs.info("payload: " + inputs.payload);
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-13 16:53:35</sys_updated_on>
+        <sys_updated_on>2020-11-16 16:34:33</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -1109,10 +1109,10 @@ gs.info("payload: " + inputs.payload);
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 16:33:30</sys_created_on>
         <sys_id>73ee9f6f1b04a01064bf11fc2d4bcb6c</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-13 16:54:05</sys_updated_on>
+        <sys_updated_on>2020-11-16 16:42:40</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=73ee9f6f1b04a01064bf11fc2d4bcb6c"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1123,27 +1123,27 @@ gs.info("payload: " + inputs.payload);
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 16:33:33</sys_created_on>
         <sys_id>20fe9f6f1b04a01064bf11fc2d4bcbc8</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-13 16:54:05</sys_updated_on>
+        <sys_updated_on>2020-11-16 16:42:40</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
-gs.info("payload2 " + inputs.payload);
+gs.info("HERE: " + inputs.payload2.toString());
   
-//gs.include("ethjs-signer");
+gs.include("ethjs-signer");
 
-//var payload2 = JSON.parse(inputs.payload2.toString());
+var payload2 = JSON.parse(inputs.payload2.toString());
   
-//var gr = new GlideRecord('x_snc_ethsign_key');
-//gr.addQuery('address',payload2.from.toString());
-//gr.query();
-//if (gr.next()) {
-//  var pk = gr.private_key;
-//}
+var gr = new GlideRecord('x_snc_ethsign_key');
+gr.addQuery('address',payload2.from.toString());
+gr.query();
+if (gr.next()) {
+  var pk = gr.private_key;
+}
   
-//outputs.txraw = ethSigner.sign(payload2, pk.toString(), false);
+outputs.txraw = ethSigner.sign(payload2, pk.toString(), false);
   
-//gs.info(outputs.txraw);
+gs.info(outputs.txraw);
 })(inputs, outputs);
 </value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
@@ -1307,7 +1307,7 @@ gs.info("payload2 " + inputs.payload);
         <table>var__m_sys_hub_step_ext_input_73ee9f6f1b04a01064bf11fc2d4bcb6c</table>
         <value>{{action.value}}</value>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=73ee9f6f1b04a01064bf11fc2d4bcb6c^sys_idNOT IN62c9abc4dbac2410969430d86896192a"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=73ee9f6f1b04a01064bf11fc2d4bcb6c^sys_idNOT IN85324b01dbe8a410969430d868961978"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1336,7 +1336,7 @@ gs.info("payload2 " + inputs.payload);
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>payload</element>
+        <element>payload2</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
@@ -1344,7 +1344,7 @@ gs.info("payload2 " + inputs.payload);
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>payload</label>
+        <label>payload2</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Script step">73ee9f6f1b04a01064bf11fc2d4bcb6c</model>
@@ -1368,8 +1368,8 @@ gs.info("payload2 " + inputs.payload);
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-13 16:53:36</sys_created_on>
-        <sys_id>62c9abc4dbac2410969430d86896192a</sys_id>
+        <sys_created_on>2020-11-16 16:34:34</sys_created_on>
+        <sys_id>85324b01dbe8a410969430d868961978</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -1377,7 +1377,7 @@ gs.info("payload2 " + inputs.payload);
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-13 16:53:36</sys_updated_on>
+        <sys_updated_on>2020-11-16 16:34:34</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1471,7 +1471,7 @@ gs.info("payload2 " + inputs.payload);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_action_input action="delete_multiple" query="model=83ee9f6f1b04a01064bf11fc2d4bcb26^sys_idNOT INa6c9abc4dbac2410969430d868961916"/>
+    <sys_hub_action_input action="delete_multiple" query="model=83ee9f6f1b04a01064bf11fc2d4bcb26^sys_idNOT INf3040f41dbe8a410969430d868961954"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1500,7 +1500,7 @@ gs.info("payload2 " + inputs.payload);
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>payload</element>
+        <element>payload2</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
@@ -1508,7 +1508,7 @@ gs.info("payload2 " + inputs.payload);
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>payload</label>
+        <label>payload2</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Sign Transaction">83ee9f6f1b04a01064bf11fc2d4bcb26</model>
@@ -1532,8 +1532,8 @@ gs.info("payload2 " + inputs.payload);
         <staged>false</staged>
         <sys_class_name>sys_hub_action_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-13 16:53:35</sys_created_on>
-        <sys_id>a6c9abc4dbac2410969430d868961916</sys_id>
+        <sys_created_on>2020-11-16 16:42:40</sys_created_on>
+        <sys_id>f3040f41dbe8a410969430d868961954</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -1541,7 +1541,7 @@ gs.info("payload2 " + inputs.payload);
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-13 16:53:35</sys_updated_on>
+        <sys_updated_on>2020-11-16 16:42:40</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1654,10 +1654,10 @@ gs.info("payload2 " + inputs.payload);
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 16:33:30</sys_created_on>
         <sys_id>73ee9f6f1b04a01064bf11fc2d4bcb6c</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-13 16:54:05</sys_updated_on>
+        <sys_updated_on>2020-11-16 16:42:40</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=73ee9f6f1b04a01064bf11fc2d4bcb6c"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1668,27 +1668,27 @@ gs.info("payload2 " + inputs.payload);
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 16:33:33</sys_created_on>
         <sys_id>20fe9f6f1b04a01064bf11fc2d4bcbc8</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-13 16:54:05</sys_updated_on>
+        <sys_updated_on>2020-11-16 16:42:40</sys_updated_on>
         <value>(function execute(inputs, outputs) {
 
-gs.info("payload2 " + inputs.payload);
+gs.info("HERE: " + inputs.payload2.toString());
   
-//gs.include("ethjs-signer");
+gs.include("ethjs-signer");
 
-//var payload2 = JSON.parse(inputs.payload2.toString());
+var payload2 = JSON.parse(inputs.payload2.toString());
   
-//var gr = new GlideRecord('x_snc_ethsign_key');
-//gr.addQuery('address',payload2.from.toString());
-//gr.query();
-//if (gr.next()) {
-//  var pk = gr.private_key;
-//}
+var gr = new GlideRecord('x_snc_ethsign_key');
+gr.addQuery('address',payload2.from.toString());
+gr.query();
+if (gr.next()) {
+  var pk = gr.private_key;
+}
   
-//outputs.txraw = ethSigner.sign(payload2, pk.toString(), false);
+outputs.txraw = ethSigner.sign(payload2, pk.toString(), false);
   
-//gs.info(outputs.txraw);
+gs.info(outputs.txraw);
 })(inputs, outputs);
 </value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
@@ -1852,7 +1852,7 @@ gs.info("payload2 " + inputs.payload);
         <table>var__m_sys_hub_step_ext_input_73ee9f6f1b04a01064bf11fc2d4bcb6c</table>
         <value>{{action.value}}</value>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=73ee9f6f1b04a01064bf11fc2d4bcb6c^sys_idNOT IN62c9abc4dbac2410969430d86896192a"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=73ee9f6f1b04a01064bf11fc2d4bcb6c^sys_idNOT IN85324b01dbe8a410969430d868961978"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1881,7 +1881,7 @@ gs.info("payload2 " + inputs.payload);
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>payload</element>
+        <element>payload2</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
@@ -1889,7 +1889,7 @@ gs.info("payload2 " + inputs.payload);
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>payload</label>
+        <label>payload2</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
         <model display_value="Script step">73ee9f6f1b04a01064bf11fc2d4bcb6c</model>
@@ -1913,8 +1913,8 @@ gs.info("payload2 " + inputs.payload);
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-13 16:53:36</sys_created_on>
-        <sys_id>62c9abc4dbac2410969430d86896192a</sys_id>
+        <sys_created_on>2020-11-16 16:34:34</sys_created_on>
+        <sys_id>85324b01dbe8a410969430d868961978</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -1922,7 +1922,7 @@ gs.info("payload2 " + inputs.payload);
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-13 16:53:36</sys_updated_on>
+        <sys_updated_on>2020-11-16 16:34:34</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2016,19 +2016,19 @@ gs.info("payload2 " + inputs.payload);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_83ee9f6f1b04a01064bf11fc2d4bcb26^sys_idNOT INe2c9abc4dbac2410969430d86896191b"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_83ee9f6f1b04a01064bf11fc2d4bcb26^sys_idNOT INbf040f41dbe8a410969430d868961958"/>
     <sys_documentation action="INSERT_OR_UPDATE">
-        <element>payload</element>
+        <element>payload2</element>
         <help/>
         <hint/>
-        <label>payload</label>
+        <label>payload2</label>
         <language>en</language>
         <name>var__m_sys_hub_action_input_83ee9f6f1b04a01064bf11fc2d4bcb26</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-11-13 16:53:36</sys_created_on>
-        <sys_id>e2c9abc4dbac2410969430d86896191b</sys_id>
+        <sys_created_on>2020-11-16 16:42:40</sys_created_on>
+        <sys_id>bf040f41dbe8a410969430d868961958</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="EthSign" source="x_snc_ethsign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_package>
@@ -2036,7 +2036,7 @@ gs.info("payload2 " + inputs.payload);
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-13 16:53:36</sys_updated_on>
+        <sys_updated_on>2020-11-16 16:42:40</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
