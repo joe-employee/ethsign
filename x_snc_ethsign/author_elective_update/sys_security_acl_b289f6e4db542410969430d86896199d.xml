@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>false</active>
+        <admin_overrides>false</admin_overrides>
+        <advanced>true</advanced>
+        <condition/>
+        <description>Allow create for private_key in x_snc_ethsign_key, for users with role x_snc_ethsign.key_user, and if the ACL script returns true.</description>
+        <name>x_snc_ethsign_key</name>
+        <operation display_value="create">create</operation>
+        <script><![CDATA[answer = false;]]></script>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 16:25:28</sys_created_on>
+        <sys_id>b289f6e4db542410969430d86896199d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_snc_ethsign_key</sys_name>
+        <sys_package display_value="EthSign" source="x_snc_ethsign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name>sys_security_acl_b289f6e4db542410969430d86896199d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 17:29:25</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</application>
+        <file_path/>
+        <instance_id>1030efb5db3c9050566750b6f496193d</instance_id>
+        <instance_name>ethereum2</instance_name>
+        <name>sys_security_acl_b289f6e4db542410969430d86896199d</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_security_acl"&gt;&lt;sys_security_acl action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;admin_overrides&gt;false&lt;/admin_overrides&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;condition/&gt;&lt;description&gt;Allow create for private_key in x_snc_ethsign_key, for users with role x_snc_ethsign.key_user, and if the ACL script returns true.&lt;/description&gt;&lt;name&gt;x_snc_ethsign_key&lt;/name&gt;&lt;operation display_value="create"&gt;create&lt;/operation&gt;&lt;script&gt;&lt;![CDATA[answer = false;]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_security_acl&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-02 16:25:28&lt;/sys_created_on&gt;&lt;sys_id&gt;b289f6e4db542410969430d86896199d&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;x_snc_ethsign_key&lt;/sys_name&gt;&lt;sys_package display_value="EthSign" source="x_snc_ethsign"&gt;0997d36b1b04a01064bf11fc2d4bcbfd&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="EthSign"&gt;0997d36b1b04a01064bf11fc2d4bcbfd&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_security_acl_b289f6e4db542410969430d86896199d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-11-02 17:29:25&lt;/sys_updated_on&gt;&lt;type display_value="record"&gt;record&lt;/type&gt;&lt;/sys_security_acl&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>987832144</payload_hash>
+        <record_name>x_snc_ethsign_key</record_name>
+        <reverted_from/>
+        <source>76978720db942410969430d868961915</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 17:29:26</sys_created_on>
+        <sys_id>4c888360db942410969430d8689619ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1758a01a8fb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 17:29:26</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>c4888360d4942410171807d4d4cfa3ed</update_guid>
+        <update_guid_history>c4888360d4942410171807d4d4cfa3ed:987832144,4a7df6a88e542410dda44f9e1fa4d4c9:-1674010953,17d9fae4ed542410ae493520db8b347e:109770859</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 17:55:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>5cd66206ecc1473c94e5d39d41c7bf90</sys_id>
+        <sys_metadata>b289f6e4db542410969430d86896199d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_ethsign_key</sys_name>
+        <sys_package display_value="EthSign" source="x_snc_ethsign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_package>
+        <sys_parent display_value="">7b73d220db142410969430d86896194a</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_scope_delete display_value="">55e628e5c62a4e43a1b2d8d11ec34501</sys_scope_delete>
+        <sys_update_name>sys_security_acl_b289f6e4db542410969430d86896199d</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_b289f6e4db542410969430d86896199d">4c888360db942410969430d8689619ed</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 17:55:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
