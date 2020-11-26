@@ -11,14 +11,14 @@
         <copied_from_name/>
         <description/>
         <internal_name>sign_transaction</internal_name>
-        <label_cache>[{"name":"subflow.payload2","label":"Input➛payload2","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"85b3ec57-1883-46f9-81b5-aebf6378070b","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.from","label":"Input➛from","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5410fc78-ba6e-4f3c-9e56-870e906dbe3b","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.to","label":"Input➛to","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"166f3c1b-55c3-42ec-b948-ea80a07fe0b9","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.gas","label":"Input➛gas","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3d6e19fc-02e0-4b0d-85d1-b1060f010d68","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.gasprice","label":"Input➛gasprice","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6964fcd1-8efd-4b03-922b-dd0c1586546c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.value","label":"Input➛value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2985e728-607e-48f7-864a-05750c834548","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.nonce","label":"Input➛nonce","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f8a8da4f-72b5-4fb6-afef-07f4b80960f8","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.data","label":"Input➛data","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d9425278-7c44-4127-b1fe-7cc781d874f4","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"f43cc659-db5a-42e6-bf7d-7fac263785c0.txraw","label":"1➛txraw","reference_display":"txraw","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"18112a10-e3e1-446e-abe1-a58a105d6087"}},{"name":"subflow.chainid","label":"Input➛chainid","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"1d7b7690-4172-49ed-b9d3-9fbdb2fc4bcf"}}]</label_cache>
-        <latest_snapshot>bc191bc11ba0281064bf11fc2d4bcb20</latest_snapshot>
+        <label_cache>[{"name":"179f4e0b-7680-46f9-adad-58e5b5fc641d.key.address","label":"1➛key➛Address","reference":"","reference_display":"Address","type":"string","base_type":"string","parent_table_name":"x_snc_ethsign_key","column_name":"address"},{"name":"subflow.chainid","label":"Input➛chainid","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"1d7b7690-4172-49ed-b9d3-9fbdb2fc4bcf"}},{"name":"f43cc659-db5a-42e6-bf7d-7fac263785c0.txraw","label":"4➛txraw","reference_display":"txraw","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"18112a10-e3e1-446e-abe1-a58a105d6087"}},{"name":"subflow.data","label":"Input➛data","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d9425278-7c44-4127-b1fe-7cc781d874f4","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.nonce","label":"Input➛nonce","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f8a8da4f-72b5-4fb6-afef-07f4b80960f8","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.value","label":"Input➛value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2985e728-607e-48f7-864a-05750c834548","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.gasprice","label":"Input➛gasprice","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6964fcd1-8efd-4b03-922b-dd0c1586546c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.gas","label":"Input➛gas","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3d6e19fc-02e0-4b0d-85d1-b1060f010d68","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.to","label":"Input➛to","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"166f3c1b-55c3-42ec-b948-ea80a07fe0b9","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.from","label":"Input➛from","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5410fc78-ba6e-4f3c-9e56-870e906dbe3b","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.payload2","label":"Input➛payload2","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"85b3ec57-1883-46f9-81b5-aebf6378070b","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"179f4e0b-7680-46f9-adad-58e5b5fc641d.key","label":"1➛key","reference":"x_snc_ethsign_key","reference_display":"Key","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f39ceea0-5f61-4c63-9ea8-fee54ed4e5cf"}},{"name":"40a09add-fa94-4c50-b97a-b594957efb24.result","label":"2➛result","reference_display":"result","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"88e40420-0b64-4004-b2b6-035d3ba069fe"}}]</label_cache>
+        <latest_snapshot>02d34140dbf4e010969430d8689619b4</latest_snapshot>
         <master_snapshot>a9f32f231b44a01064bf11fc2d4bcb14</master_snapshot>
         <name>Sign Transaction</name>
         <natlang/>
         <outputs/>
         <remote_trigger_id/>
-        <run_as>system</run_as>
+        <run_as>user</run_as>
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>13c9dfab1b04a01064bf11fc2d4bcb24</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>54</sys_mod_count>
         <sys_name>Sign Transaction</sys_name>
         <sys_overrides/>
         <sys_package display_value="EthSign" source="x_snc_ethsign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_package>
@@ -37,12 +37,12 @@
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_update_name>sys_hub_flow_13c9dfab1b04a01064bf11fc2d4bcb24</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-16 16:33:09</sys_updated_on>
+        <sys_updated_on>2020-11-25 15:03:19</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=13c9dfab1b04a01064bf11fc2d4bcb24"/>
     <sys_variable_value action="delete_multiple" query="document_key=13c9dfab1b04a01064bf11fc2d4bcb24"/>
-    <sys_hub_flow_component action="delete_multiple" query="flow=13c9dfab1b04a01064bf11fc2d4bcb24^sys_idNOT IN0401a3ef1b04a01064bf11fc2d4bcb66,484277ab1b44a01064bf11fc2d4bcbbe"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=13c9dfab1b04a01064bf11fc2d4bcb24^sys_idNOT IN0401a3ef1b04a01064bf11fc2d4bcb66,484277ab1b44a01064bf11fc2d4bcbbe,6749829a1b6ca81064bf11fc2d4bcb87,6b49829a1b6ca81064bf11fc2d4bcb83,c7491e161baca81064bf11fc2d4bcb97,e769069a1b6ca81064bf11fc2d4bcb7a,ecf98a9a1b6ca81064bf11fc2d4bcbce"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -52,16 +52,16 @@
         <compiled_snapshot>83ee9f6f1b04a01064bf11fc2d4bcb26</compiled_snapshot>
         <display_text/>
         <flow display_value="Sign Transaction">13c9dfab1b04a01064bf11fc2d4bcb24</flow>
-        <order>1</order>
+        <order>4</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 16:42:33</sys_created_on>
         <sys_id>0401a3ef1b04a01064bf11fc2d4bcb66</sys_id>
-        <sys_mod_count>86</sys_mod_count>
+        <sys_mod_count>148</sys_mod_count>
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2020-11-16 18:14:31</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 15:04:20</sys_updated_on>
         <ui_id>f43cc659-db5a-42e6-bf7d-7fac263785c0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0401a3ef1b04a01064bf11fc2d4bcb66"/>
@@ -125,6 +125,18 @@
         <sys_updated_on>2020-11-13 13:24:15</sys_updated_on>
         <table>var__m_sys_hub_action_input_83ee9f6f1b04a01064bf11fc2d4bcb26</table>
         <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>key</field>
+        <id>0401a3ef1b04a01064bf11fc2d4bcb66</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:41:23</sys_created_on>
+        <sys_id>a7f9ca9a1b6ca81064bf11fc2d4bcbc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:41:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_83ee9f6f1b04a01064bf11fc2d4bcb26</table>
+        <value>{{179f4e0b-7680-46f9-adad-58e5b5fc641d.key}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>nonce</field>
@@ -197,7 +209,7 @@
         <flow display_value="Sign Transaction">13c9dfab1b04a01064bf11fc2d4bcb24</flow>
         <inputs/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>2</order>
+        <order>5</order>
         <outputs_assigned>txraw</outputs_assigned>
         <outputs_to_assign/>
         <outputs_to_assign/>
@@ -206,10 +218,10 @@
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 17:57:54</sys_created_on>
         <sys_id>484277ab1b44a01064bf11fc2d4bcbbe</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>47</sys_mod_count>
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-16 16:33:09</sys_updated_on>
+        <sys_updated_on>2020-11-25 15:03:19</sys_updated_on>
         <ui_id>0e140006-3bf4-4888-ade4-0f138e6609c0</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -228,6 +240,207 @@
         <table>var__m_sys_hub_flow_output_13c9dfab1b04a01064bf11fc2d4bcb24</table>
         <value>{{f43cc659-db5a-42e6-bf7d-7fac263785c0.txraw}}</value>
     </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Verify User and Key Permission">b2b8ca5a1b6ca81064bf11fc2d4bcb65</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>b2b8ca5a1b6ca81064bf11fc2d4bcb65</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Sign Transaction">13c9dfab1b04a01064bf11fc2d4bcb24</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:38:23</sys_created_on>
+        <sys_id>6749829a1b6ca81064bf11fc2d4bcb87</sys_id>
+        <sys_mod_count>62</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 15:04:20</sys_updated_on>
+        <ui_id>40a09add-fa94-4c50-b97a-b594957efb24</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6749829a1b6ca81064bf11fc2d4bcb87"/>
+    <sys_element_mapping action="delete_multiple" query="id=6749829a1b6ca81064bf11fc2d4bcb87"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>key</field>
+        <id>6749829a1b6ca81064bf11fc2d4bcb87</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:38:23</sys_created_on>
+        <sys_id>6b49829a1b6ca81064bf11fc2d4bcb88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:38:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b2b8ca5a1b6ca81064bf11fc2d4bcb65</table>
+        <value>{{179f4e0b-7680-46f9-adad-58e5b5fc641d.key}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Key from Payload">f1470e1a1b6ca81064bf11fc2d4bcb8b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>f1470e1a1b6ca81064bf11fc2d4bcb8b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Sign Transaction">13c9dfab1b04a01064bf11fc2d4bcb24</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:38:23</sys_created_on>
+        <sys_id>6b49829a1b6ca81064bf11fc2d4bcb83</sys_id>
+        <sys_mod_count>62</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 15:04:20</sys_updated_on>
+        <ui_id>179f4e0b-7680-46f9-adad-58e5b5fc641d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6b49829a1b6ca81064bf11fc2d4bcb83"/>
+    <sys_element_mapping action="delete_multiple" query="id=6b49829a1b6ca81064bf11fc2d4bcb83"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>payload2</field>
+        <id>6b49829a1b6ca81064bf11fc2d4bcb83</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:38:23</sys_created_on>
+        <sys_id>e749829a1b6ca81064bf11fc2d4bcb85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:38:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f1470e1a1b6ca81064bf11fc2d4bcb8b</table>
+        <value>{{subflow.payload2}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Sign Transaction">13c9dfab1b04a01064bf11fc2d4bcb24</flow>
+        <order>3.1</order>
+        <parent_ui_id>a3a46213-faca-4044-a4e6-91ba6f647488</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 10:48:15</sys_created_on>
+        <sys_id>c7491e161baca81064bf11fc2d4bcb97</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 15:04:20</sys_updated_on>
+        <ui_id>e17ca3cc-65d1-4b4e-891a-e9b6c2703386</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c7491e161baca81064bf11fc2d4bcb97"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c7491e161baca81064bf11fc2d4bcb97</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 10:48:16</sys_created_on>
+        <sys_id>0b491e161baca81064bf11fc2d4bcb98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 10:48:16</sys_updated_on>
+        <value>Permission not recognized</value>
+        <variable display_value="">23c1bcc6531003003bf1d9109ec587e5</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">2369069a1b6ca81064bf11fc2d4bcb7a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Sign Transaction">13c9dfab1b04a01064bf11fc2d4bcb24</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:38:56</sys_created_on>
+        <sys_id>e769069a1b6ca81064bf11fc2d4bcb7a</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 15:03:19</sys_updated_on>
+        <ui_id>a3a46213-faca-4044-a4e6-91ba6f647488</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e769069a1b6ca81064bf11fc2d4bcb7a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>e769069a1b6ca81064bf11fc2d4bcb7a</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:38:56</sys_created_on>
+        <sys_id>a369069a1b6ca81064bf11fc2d4bcb7d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:38:56</sys_updated_on>
+        <value>Result is true</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e769069a1b6ca81064bf11fc2d4bcb7a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>e769069a1b6ca81064bf11fc2d4bcb7a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:38:56</sys_created_on>
+        <sys_id>2369069a1b6ca81064bf11fc2d4bcb7d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 13:13:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{40a09add-fa94-4c50-b97a-b594957efb24.result}}=false</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>e769069a1b6ca81064bf11fc2d4bcb7a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:38:56</sys_created_on>
+        <sys_id>6f69069a1b6ca81064bf11fc2d4bcb7c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:38:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">28f98a9a1b6ca81064bf11fc2d4bcbce</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Sign Transaction">13c9dfab1b04a01064bf11fc2d4bcb24</flow>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>3.2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a3a46213-faca-4044-a4e6-91ba6f647488</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:41:11</sys_created_on>
+        <sys_id>ecf98a9a1b6ca81064bf11fc2d4bcbce</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 15:03:19</sys_updated_on>
+        <ui_id>f9fdc536-b954-4a0d-a975-29cb7ae4a90a</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ecf98a9a1b6ca81064bf11fc2d4bcbce"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=13c9dfab1b04a01064bf11fc2d4bcb24^sys_idNOT IN57c9dfab1b04a01064bf11fc2d4bcb26"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>13c9dfab1b04a01064bf11fc2d4bcb24</id>
@@ -404,7 +617,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_output>
-    <sys_hub_action_instance action="delete_multiple" query="flow=13c9dfab1b04a01064bf11fc2d4bcb24^sys_idNOT IN0401a3ef1b04a01064bf11fc2d4bcb66"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=13c9dfab1b04a01064bf11fc2d4bcb24^sys_idNOT IN0401a3ef1b04a01064bf11fc2d4bcb66,6749829a1b6ca81064bf11fc2d4bcb87,6b49829a1b6ca81064bf11fc2d4bcb83,c7491e161baca81064bf11fc2d4bcb97"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -414,16 +627,16 @@
         <compiled_snapshot>83ee9f6f1b04a01064bf11fc2d4bcb26</compiled_snapshot>
         <display_text/>
         <flow display_value="Sign Transaction">13c9dfab1b04a01064bf11fc2d4bcb24</flow>
-        <order>1</order>
+        <order>4</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 16:42:33</sys_created_on>
         <sys_id>0401a3ef1b04a01064bf11fc2d4bcb66</sys_id>
-        <sys_mod_count>86</sys_mod_count>
+        <sys_mod_count>148</sys_mod_count>
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2020-11-16 18:14:31</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 15:04:20</sys_updated_on>
         <ui_id>f43cc659-db5a-42e6-bf7d-7fac263785c0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0401a3ef1b04a01064bf11fc2d4bcb66"/>
@@ -489,6 +702,18 @@
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>key</field>
+        <id>0401a3ef1b04a01064bf11fc2d4bcb66</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:41:23</sys_created_on>
+        <sys_id>a7f9ca9a1b6ca81064bf11fc2d4bcbc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:41:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_83ee9f6f1b04a01064bf11fc2d4bcb26</table>
+        <value>{{179f4e0b-7680-46f9-adad-58e5b5fc641d.key}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>nonce</field>
         <id>0401a3ef1b04a01064bf11fc2d4bcb66</id>
         <sys_created_by>admin2</sys_created_by>
@@ -548,7 +773,112 @@
         <table>var__m_sys_hub_action_input_83ee9f6f1b04a01064bf11fc2d4bcb26</table>
         <value/>
     </sys_element_mapping>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=13c9dfab1b04a01064bf11fc2d4bcb24^sys_idNOT IN484277ab1b44a01064bf11fc2d4bcbbe"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Verify User and Key Permission">b2b8ca5a1b6ca81064bf11fc2d4bcb65</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>b2b8ca5a1b6ca81064bf11fc2d4bcb65</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Sign Transaction">13c9dfab1b04a01064bf11fc2d4bcb24</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:38:23</sys_created_on>
+        <sys_id>6749829a1b6ca81064bf11fc2d4bcb87</sys_id>
+        <sys_mod_count>62</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 15:04:20</sys_updated_on>
+        <ui_id>40a09add-fa94-4c50-b97a-b594957efb24</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6749829a1b6ca81064bf11fc2d4bcb87"/>
+    <sys_element_mapping action="delete_multiple" query="id=6749829a1b6ca81064bf11fc2d4bcb87"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>key</field>
+        <id>6749829a1b6ca81064bf11fc2d4bcb87</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:38:23</sys_created_on>
+        <sys_id>6b49829a1b6ca81064bf11fc2d4bcb88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:38:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b2b8ca5a1b6ca81064bf11fc2d4bcb65</table>
+        <value>{{179f4e0b-7680-46f9-adad-58e5b5fc641d.key}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Key from Payload">f1470e1a1b6ca81064bf11fc2d4bcb8b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>f1470e1a1b6ca81064bf11fc2d4bcb8b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Sign Transaction">13c9dfab1b04a01064bf11fc2d4bcb24</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:38:23</sys_created_on>
+        <sys_id>6b49829a1b6ca81064bf11fc2d4bcb83</sys_id>
+        <sys_mod_count>62</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 15:04:20</sys_updated_on>
+        <ui_id>179f4e0b-7680-46f9-adad-58e5b5fc641d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6b49829a1b6ca81064bf11fc2d4bcb83"/>
+    <sys_element_mapping action="delete_multiple" query="id=6b49829a1b6ca81064bf11fc2d4bcb83"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>payload2</field>
+        <id>6b49829a1b6ca81064bf11fc2d4bcb83</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:38:23</sys_created_on>
+        <sys_id>e749829a1b6ca81064bf11fc2d4bcb85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:38:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f1470e1a1b6ca81064bf11fc2d4bcb8b</table>
+        <value>{{subflow.payload2}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Sign Transaction">13c9dfab1b04a01064bf11fc2d4bcb24</flow>
+        <order>3.1</order>
+        <parent_ui_id>a3a46213-faca-4044-a4e6-91ba6f647488</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 10:48:15</sys_created_on>
+        <sys_id>c7491e161baca81064bf11fc2d4bcb97</sys_id>
+        <sys_mod_count>36</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 15:04:20</sys_updated_on>
+        <ui_id>e17ca3cc-65d1-4b4e-891a-e9b6c2703386</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c7491e161baca81064bf11fc2d4bcb97"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c7491e161baca81064bf11fc2d4bcb97</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 10:48:16</sys_created_on>
+        <sys_id>0b491e161baca81064bf11fc2d4bcb98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 10:48:16</sys_updated_on>
+        <value>Permission not recognized</value>
+        <variable display_value="">23c1bcc6531003003bf1d9109ec587e5</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=13c9dfab1b04a01064bf11fc2d4bcb24^sys_idNOT IN484277ab1b44a01064bf11fc2d4bcbbe,e769069a1b6ca81064bf11fc2d4bcb7a,ecf98a9a1b6ca81064bf11fc2d4bcbce"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <block display_value="">0c4277ab1b44a01064bf11fc2d4bcbbd</block>
         <comment/>
@@ -560,7 +890,7 @@
         <flow display_value="Sign Transaction">13c9dfab1b04a01064bf11fc2d4bcb24</flow>
         <inputs/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>2</order>
+        <order>5</order>
         <outputs_assigned>txraw</outputs_assigned>
         <outputs_to_assign/>
         <outputs_to_assign/>
@@ -569,10 +899,10 @@
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 17:57:54</sys_created_on>
         <sys_id>484277ab1b44a01064bf11fc2d4bcbbe</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>47</sys_mod_count>
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-16 16:33:09</sys_updated_on>
+        <sys_updated_on>2020-11-25 15:03:19</sys_updated_on>
         <ui_id>0e140006-3bf4-4888-ade4-0f138e6609c0</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -591,6 +921,102 @@
         <table>var__m_sys_hub_flow_output_13c9dfab1b04a01064bf11fc2d4bcb24</table>
         <value>{{f43cc659-db5a-42e6-bf7d-7fac263785c0.txraw}}</value>
     </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">2369069a1b6ca81064bf11fc2d4bcb7a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Sign Transaction">13c9dfab1b04a01064bf11fc2d4bcb24</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:38:56</sys_created_on>
+        <sys_id>e769069a1b6ca81064bf11fc2d4bcb7a</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 15:03:19</sys_updated_on>
+        <ui_id>a3a46213-faca-4044-a4e6-91ba6f647488</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e769069a1b6ca81064bf11fc2d4bcb7a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>e769069a1b6ca81064bf11fc2d4bcb7a</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:38:56</sys_created_on>
+        <sys_id>a369069a1b6ca81064bf11fc2d4bcb7d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:38:56</sys_updated_on>
+        <value>Result is true</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e769069a1b6ca81064bf11fc2d4bcb7a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>e769069a1b6ca81064bf11fc2d4bcb7a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:38:56</sys_created_on>
+        <sys_id>2369069a1b6ca81064bf11fc2d4bcb7d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 13:13:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{40a09add-fa94-4c50-b97a-b594957efb24.result}}=false</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>e769069a1b6ca81064bf11fc2d4bcb7a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:38:56</sys_created_on>
+        <sys_id>6f69069a1b6ca81064bf11fc2d4bcb7c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:38:56</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">28f98a9a1b6ca81064bf11fc2d4bcbce</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Sign Transaction">13c9dfab1b04a01064bf11fc2d4bcb24</flow>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>3.2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a3a46213-faca-4044-a4e6-91ba6f647488</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:41:11</sys_created_on>
+        <sys_id>ecf98a9a1b6ca81064bf11fc2d4bcbce</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 15:03:19</sys_updated_on>
+        <ui_id>f9fdc536-b954-4a0d-a975-29cb7ae4a90a</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ecf98a9a1b6ca81064bf11fc2d4bcbce"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_13c9dfab1b04a01064bf11fc2d4bcb24^sys_idNOT IN67d93200db2c2410969430d8689619cd"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>payload2</element>
@@ -643,17 +1069,17 @@
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"4ff32f231b44a01064bf11fc2d4bcbc7","name":"plan"}}</plan>
         <plan_id display_value="Sign Transaction">13c9dfab1b04a01064bf11fc2d4bcb24</plan_id>
-        <snapshot>bc191bc11ba0281064bf11fc2d4bcb20</snapshot>
+        <snapshot>02d34140dbf4e010969430d8689619b4</snapshot>
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 16:55:35</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4ff32f231b44a01064bf11fc2d4bcbc7</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-16 16:33:08</sys_updated_on>
+        <sys_updated_on>2020-11-25 15:03:19</sys_updated_on>
     </sys_flow_subflow_plan>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -666,14 +1092,14 @@
         <copied_from_name/>
         <description/>
         <internal_name>sign_transaction</internal_name>
-        <label_cache>[{"name":"subflow.payload2","label":"Input➛payload2","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"85b3ec57-1883-46f9-81b5-aebf6378070b","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.from","label":"Input➛from","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5410fc78-ba6e-4f3c-9e56-870e906dbe3b","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.to","label":"Input➛to","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"166f3c1b-55c3-42ec-b948-ea80a07fe0b9","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.gas","label":"Input➛gas","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3d6e19fc-02e0-4b0d-85d1-b1060f010d68","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.gasprice","label":"Input➛gasprice","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6964fcd1-8efd-4b03-922b-dd0c1586546c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.value","label":"Input➛value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2985e728-607e-48f7-864a-05750c834548","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.nonce","label":"Input➛nonce","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f8a8da4f-72b5-4fb6-afef-07f4b80960f8","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.data","label":"Input➛data","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d9425278-7c44-4127-b1fe-7cc781d874f4","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"f43cc659-db5a-42e6-bf7d-7fac263785c0.txraw","label":"1➛txraw","reference_display":"txraw","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"18112a10-e3e1-446e-abe1-a58a105d6087"}},{"name":"subflow.chainid","label":"Input➛chainid","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"1d7b7690-4172-49ed-b9d3-9fbdb2fc4bcf"}}]</label_cache>
+        <label_cache>[{"name":"179f4e0b-7680-46f9-adad-58e5b5fc641d.key.address","label":"1➛key➛Address","reference":"","reference_display":"Address","type":"string","base_type":"string","parent_table_name":"x_snc_ethsign_key","column_name":"address"},{"name":"subflow.chainid","label":"Input➛chainid","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"1d7b7690-4172-49ed-b9d3-9fbdb2fc4bcf"}},{"name":"f43cc659-db5a-42e6-bf7d-7fac263785c0.txraw","label":"4➛txraw","reference_display":"txraw","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"18112a10-e3e1-446e-abe1-a58a105d6087"}},{"name":"subflow.data","label":"Input➛data","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d9425278-7c44-4127-b1fe-7cc781d874f4","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.nonce","label":"Input➛nonce","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f8a8da4f-72b5-4fb6-afef-07f4b80960f8","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.value","label":"Input➛value","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2985e728-607e-48f7-864a-05750c834548","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.gasprice","label":"Input➛gasprice","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6964fcd1-8efd-4b03-922b-dd0c1586546c","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.gas","label":"Input➛gas","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3d6e19fc-02e0-4b0d-85d1-b1060f010d68","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.to","label":"Input➛to","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"166f3c1b-55c3-42ec-b948-ea80a07fe0b9","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.from","label":"Input➛from","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5410fc78-ba6e-4f3c-9e56-870e906dbe3b","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.payload2","label":"Input➛payload2","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"85b3ec57-1883-46f9-81b5-aebf6378070b","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"179f4e0b-7680-46f9-adad-58e5b5fc641d.key","label":"1➛key","reference":"x_snc_ethsign_key","reference_display":"Key","type":"reference","base_type":"reference","attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f39ceea0-5f61-4c63-9ea8-fee54ed4e5cf"}},{"name":"40a09add-fa94-4c50-b97a-b594957efb24.result","label":"2➛result","reference_display":"result","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"88e40420-0b64-4004-b2b6-035d3ba069fe"}}]</label_cache>
         <master>true</master>
         <name>Sign Transaction</name>
         <natlang/>
         <outputs/>
         <parent_flow display_value="Sign Transaction">13c9dfab1b04a01064bf11fc2d4bcb24</parent_flow>
         <remote_trigger_id/>
-        <run_as>system</run_as>
+        <run_as>user</run_as>
         <sc_callable>false</sc_callable>
         <status>published</status>
         <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
@@ -682,7 +1108,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a9f32f231b44a01064bf11fc2d4bcb14</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -690,12 +1116,12 @@
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-16 16:33:07</sys_updated_on>
+        <sys_updated_on>2020-11-25 15:03:17</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=a9f32f231b44a01064bf11fc2d4bcb14"/>
     <sys_variable_value action="delete_multiple" query="document_key=a9f32f231b44a01064bf11fc2d4bcb14"/>
-    <sys_hub_flow_component action="delete_multiple" query="flow=a9f32f231b44a01064bf11fc2d4bcb14^sys_idNOT IN2642f7ab1b44a01064bf11fc2d4bcb0e,fef32f231b44a01064bf11fc2d4bcbaa"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=a9f32f231b44a01064bf11fc2d4bcb14^sys_idNOT IN2642f7ab1b44a01064bf11fc2d4bcb0e,520a4e9a1b6ca81064bf11fc2d4bcb77,560a4e9a1b6ca81064bf11fc2d4bcb6e,960a4e9a1b6ca81064bf11fc2d4bcb71,d20a4e9a1b6ca81064bf11fc2d4bcb74,e179de161baca81064bf11fc2d4bcb81,fef32f231b44a01064bf11fc2d4bcbaa"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <block display_value="">0c4277ab1b44a01064bf11fc2d4bcbbd</block>
         <comment/>
@@ -707,7 +1133,7 @@
         <flow display_value="Sign Transaction">a9f32f231b44a01064bf11fc2d4bcb14</flow>
         <inputs/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>2</order>
+        <order>5</order>
         <outputs_assigned>txraw</outputs_assigned>
         <outputs_to_assign/>
         <outputs_to_assign/>
@@ -716,10 +1142,10 @@
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 17:58:04</sys_created_on>
         <sys_id>2642f7ab1b44a01064bf11fc2d4bcb0e</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-16 16:33:07</sys_updated_on>
+        <sys_updated_on>2020-11-25 15:03:17</sys_updated_on>
         <ui_id>0e140006-3bf4-4888-ade4-0f138e6609c0</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -738,6 +1164,207 @@
         <table>var__m_sys_hub_flow_output_a9f32f231b44a01064bf11fc2d4bcb14</table>
         <value>{{f43cc659-db5a-42e6-bf7d-7fac263785c0.txraw}}</value>
     </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">2369069a1b6ca81064bf11fc2d4bcb7a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Sign Transaction">a9f32f231b44a01064bf11fc2d4bcb14</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:41:35</sys_created_on>
+        <sys_id>520a4e9a1b6ca81064bf11fc2d4bcb77</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 15:03:17</sys_updated_on>
+        <ui_id>a3a46213-faca-4044-a4e6-91ba6f647488</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=520a4e9a1b6ca81064bf11fc2d4bcb77"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>520a4e9a1b6ca81064bf11fc2d4bcb77</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:41:35</sys_created_on>
+        <sys_id>120a4e9a1b6ca81064bf11fc2d4bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:41:35</sys_updated_on>
+        <value>Result is true</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=520a4e9a1b6ca81064bf11fc2d4bcb77"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>520a4e9a1b6ca81064bf11fc2d4bcb77</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:41:35</sys_created_on>
+        <sys_id>9e0a4e9a1b6ca81064bf11fc2d4bcb79</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 13:13:59</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{40a09add-fa94-4c50-b97a-b594957efb24.result}}=false</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>520a4e9a1b6ca81064bf11fc2d4bcb77</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:41:35</sys_created_on>
+        <sys_id>da0a4e9a1b6ca81064bf11fc2d4bcb79</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:41:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Key from Payload">f1470e1a1b6ca81064bf11fc2d4bcb8b</action_type>
+        <action_type_parent display_value="Get Key from Payload">0596061a1b6ca81064bf11fc2d4bcb97</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f1470e1a1b6ca81064bf11fc2d4bcb8b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Sign Transaction">a9f32f231b44a01064bf11fc2d4bcb14</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:41:35</sys_created_on>
+        <sys_id>560a4e9a1b6ca81064bf11fc2d4bcb6e</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 15:03:17</sys_updated_on>
+        <ui_id>179f4e0b-7680-46f9-adad-58e5b5fc641d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=560a4e9a1b6ca81064bf11fc2d4bcb6e"/>
+    <sys_element_mapping action="delete_multiple" query="id=560a4e9a1b6ca81064bf11fc2d4bcb6e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>payload2</field>
+        <id>560a4e9a1b6ca81064bf11fc2d4bcb6e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:41:35</sys_created_on>
+        <sys_id>920a4e9a1b6ca81064bf11fc2d4bcb6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:41:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f1470e1a1b6ca81064bf11fc2d4bcb8b</table>
+        <value>{{subflow.payload2}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Verify User and Key Permission">b2b8ca5a1b6ca81064bf11fc2d4bcb65</action_type>
+        <action_type_parent display_value="Verify User and Key Permission">a05386961b6ca81064bf11fc2d4bcb87</action_type_parent>
+        <comment/>
+        <compiled_snapshot>b2b8ca5a1b6ca81064bf11fc2d4bcb65</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Sign Transaction">a9f32f231b44a01064bf11fc2d4bcb14</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:41:35</sys_created_on>
+        <sys_id>960a4e9a1b6ca81064bf11fc2d4bcb71</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 15:03:17</sys_updated_on>
+        <ui_id>40a09add-fa94-4c50-b97a-b594957efb24</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=960a4e9a1b6ca81064bf11fc2d4bcb71"/>
+    <sys_element_mapping action="delete_multiple" query="id=960a4e9a1b6ca81064bf11fc2d4bcb71"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>key</field>
+        <id>960a4e9a1b6ca81064bf11fc2d4bcb71</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:41:35</sys_created_on>
+        <sys_id>d20a4e9a1b6ca81064bf11fc2d4bcb72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:41:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b2b8ca5a1b6ca81064bf11fc2d4bcb65</table>
+        <value>{{179f4e0b-7680-46f9-adad-58e5b5fc641d.key}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">28f98a9a1b6ca81064bf11fc2d4bcbce</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Sign Transaction">a9f32f231b44a01064bf11fc2d4bcb14</flow>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>3.2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a3a46213-faca-4044-a4e6-91ba6f647488</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:41:35</sys_created_on>
+        <sys_id>d20a4e9a1b6ca81064bf11fc2d4bcb74</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 15:03:17</sys_updated_on>
+        <ui_id>f9fdc536-b954-4a0d-a975-29cb7ae4a90a</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=d20a4e9a1b6ca81064bf11fc2d4bcb74"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Sign Transaction">a9f32f231b44a01064bf11fc2d4bcb14</flow>
+        <order>3.1</order>
+        <parent_ui_id>a3a46213-faca-4044-a4e6-91ba6f647488</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 10:48:58</sys_created_on>
+        <sys_id>e179de161baca81064bf11fc2d4bcb81</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 15:03:17</sys_updated_on>
+        <ui_id>e17ca3cc-65d1-4b4e-891a-e9b6c2703386</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e179de161baca81064bf11fc2d4bcb81"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e179de161baca81064bf11fc2d4bcb81</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 10:48:58</sys_created_on>
+        <sys_id>2579de161baca81064bf11fc2d4bcb82</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 10:48:58</sys_updated_on>
+        <value>Permission not recognized</value>
+        <variable display_value="">23c1bcc6531003003bf1d9109ec587e5</variable>
+    </sys_variable_value>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -747,16 +1374,16 @@
         <compiled_snapshot>83ee9f6f1b04a01064bf11fc2d4bcb26</compiled_snapshot>
         <display_text/>
         <flow display_value="Sign Transaction">a9f32f231b44a01064bf11fc2d4bcb14</flow>
-        <order>1</order>
+        <order>4</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 16:55:34</sys_created_on>
         <sys_id>fef32f231b44a01064bf11fc2d4bcbaa</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-16 16:33:07</sys_updated_on>
+        <sys_updated_on>2020-11-25 15:03:17</sys_updated_on>
         <ui_id>f43cc659-db5a-42e6-bf7d-7fac263785c0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=fef32f231b44a01064bf11fc2d4bcbaa"/>
@@ -820,6 +1447,18 @@
         <sys_updated_on>2020-10-30 16:55:34</sys_updated_on>
         <table>var__m_sys_hub_action_input_83ee9f6f1b04a01064bf11fc2d4bcb26</table>
         <value>{{subflow.gasprice}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>key</field>
+        <id>fef32f231b44a01064bf11fc2d4bcbaa</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:41:35</sys_created_on>
+        <sys_id>1a0a4e9a1b6ca81064bf11fc2d4bcb73</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:41:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_83ee9f6f1b04a01064bf11fc2d4bcb26</table>
+        <value>{{179f4e0b-7680-46f9-adad-58e5b5fc641d.key}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>nonce</field>
@@ -1057,7 +1696,112 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_output>
-    <sys_hub_action_instance action="delete_multiple" query="flow=a9f32f231b44a01064bf11fc2d4bcb14^sys_idNOT INfef32f231b44a01064bf11fc2d4bcbaa"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=a9f32f231b44a01064bf11fc2d4bcb14^sys_idNOT IN560a4e9a1b6ca81064bf11fc2d4bcb6e,960a4e9a1b6ca81064bf11fc2d4bcb71,e179de161baca81064bf11fc2d4bcb81,fef32f231b44a01064bf11fc2d4bcbaa"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Key from Payload">f1470e1a1b6ca81064bf11fc2d4bcb8b</action_type>
+        <action_type_parent display_value="Get Key from Payload">0596061a1b6ca81064bf11fc2d4bcb97</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f1470e1a1b6ca81064bf11fc2d4bcb8b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Sign Transaction">a9f32f231b44a01064bf11fc2d4bcb14</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:41:35</sys_created_on>
+        <sys_id>560a4e9a1b6ca81064bf11fc2d4bcb6e</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 15:03:17</sys_updated_on>
+        <ui_id>179f4e0b-7680-46f9-adad-58e5b5fc641d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=560a4e9a1b6ca81064bf11fc2d4bcb6e"/>
+    <sys_element_mapping action="delete_multiple" query="id=560a4e9a1b6ca81064bf11fc2d4bcb6e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>payload2</field>
+        <id>560a4e9a1b6ca81064bf11fc2d4bcb6e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:41:35</sys_created_on>
+        <sys_id>920a4e9a1b6ca81064bf11fc2d4bcb6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:41:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f1470e1a1b6ca81064bf11fc2d4bcb8b</table>
+        <value>{{subflow.payload2}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Verify User and Key Permission">b2b8ca5a1b6ca81064bf11fc2d4bcb65</action_type>
+        <action_type_parent display_value="Verify User and Key Permission">a05386961b6ca81064bf11fc2d4bcb87</action_type_parent>
+        <comment/>
+        <compiled_snapshot>b2b8ca5a1b6ca81064bf11fc2d4bcb65</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Sign Transaction">a9f32f231b44a01064bf11fc2d4bcb14</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:41:35</sys_created_on>
+        <sys_id>960a4e9a1b6ca81064bf11fc2d4bcb71</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 15:03:17</sys_updated_on>
+        <ui_id>40a09add-fa94-4c50-b97a-b594957efb24</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=960a4e9a1b6ca81064bf11fc2d4bcb71"/>
+    <sys_element_mapping action="delete_multiple" query="id=960a4e9a1b6ca81064bf11fc2d4bcb71"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>key</field>
+        <id>960a4e9a1b6ca81064bf11fc2d4bcb71</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:41:35</sys_created_on>
+        <sys_id>d20a4e9a1b6ca81064bf11fc2d4bcb72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:41:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_b2b8ca5a1b6ca81064bf11fc2d4bcb65</table>
+        <value>{{179f4e0b-7680-46f9-adad-58e5b5fc641d.key}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Sign Transaction">a9f32f231b44a01064bf11fc2d4bcb14</flow>
+        <order>3.1</order>
+        <parent_ui_id>a3a46213-faca-4044-a4e6-91ba6f647488</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 10:48:58</sys_created_on>
+        <sys_id>e179de161baca81064bf11fc2d4bcb81</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 15:03:17</sys_updated_on>
+        <ui_id>e17ca3cc-65d1-4b4e-891a-e9b6c2703386</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e179de161baca81064bf11fc2d4bcb81"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e179de161baca81064bf11fc2d4bcb81</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 10:48:58</sys_created_on>
+        <sys_id>2579de161baca81064bf11fc2d4bcb82</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 10:48:58</sys_updated_on>
+        <value>Permission not recognized</value>
+        <variable display_value="">23c1bcc6531003003bf1d9109ec587e5</variable>
+    </sys_variable_value>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -1067,16 +1811,16 @@
         <compiled_snapshot>83ee9f6f1b04a01064bf11fc2d4bcb26</compiled_snapshot>
         <display_text/>
         <flow display_value="Sign Transaction">a9f32f231b44a01064bf11fc2d4bcb14</flow>
-        <order>1</order>
+        <order>4</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 16:55:34</sys_created_on>
         <sys_id>fef32f231b44a01064bf11fc2d4bcbaa</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-16 16:33:07</sys_updated_on>
+        <sys_updated_on>2020-11-25 15:03:17</sys_updated_on>
         <ui_id>f43cc659-db5a-42e6-bf7d-7fac263785c0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=fef32f231b44a01064bf11fc2d4bcbaa"/>
@@ -1142,6 +1886,18 @@
         <value>{{subflow.gasprice}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>key</field>
+        <id>fef32f231b44a01064bf11fc2d4bcbaa</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:41:35</sys_created_on>
+        <sys_id>1a0a4e9a1b6ca81064bf11fc2d4bcb73</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:41:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_83ee9f6f1b04a01064bf11fc2d4bcb26</table>
+        <value>{{179f4e0b-7680-46f9-adad-58e5b5fc641d.key}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>nonce</field>
         <id>fef32f231b44a01064bf11fc2d4bcbaa</id>
         <sys_created_by>admin2</sys_created_by>
@@ -1201,7 +1957,7 @@
         <table>var__m_sys_hub_action_input_83ee9f6f1b04a01064bf11fc2d4bcb26</table>
         <value>{{subflow.value}}</value>
     </sys_element_mapping>
-    <sys_hub_flow_logic action="delete_multiple" query="flow=a9f32f231b44a01064bf11fc2d4bcb14^sys_idNOT IN2642f7ab1b44a01064bf11fc2d4bcb0e"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=a9f32f231b44a01064bf11fc2d4bcb14^sys_idNOT IN2642f7ab1b44a01064bf11fc2d4bcb0e,520a4e9a1b6ca81064bf11fc2d4bcb77,d20a4e9a1b6ca81064bf11fc2d4bcb74"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <block display_value="">0c4277ab1b44a01064bf11fc2d4bcbbd</block>
         <comment/>
@@ -1213,7 +1969,7 @@
         <flow display_value="Sign Transaction">a9f32f231b44a01064bf11fc2d4bcb14</flow>
         <inputs/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>2</order>
+        <order>5</order>
         <outputs_assigned>txraw</outputs_assigned>
         <outputs_to_assign/>
         <outputs_to_assign/>
@@ -1222,10 +1978,10 @@
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 17:58:04</sys_created_on>
         <sys_id>2642f7ab1b44a01064bf11fc2d4bcb0e</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-16 16:33:07</sys_updated_on>
+        <sys_updated_on>2020-11-25 15:03:17</sys_updated_on>
         <ui_id>0e140006-3bf4-4888-ade4-0f138e6609c0</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -1244,6 +2000,102 @@
         <table>var__m_sys_hub_flow_output_a9f32f231b44a01064bf11fc2d4bcb14</table>
         <value>{{f43cc659-db5a-42e6-bf7d-7fac263785c0.txraw}}</value>
     </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">2369069a1b6ca81064bf11fc2d4bcb7a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Sign Transaction">a9f32f231b44a01064bf11fc2d4bcb14</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:41:35</sys_created_on>
+        <sys_id>520a4e9a1b6ca81064bf11fc2d4bcb77</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 15:03:17</sys_updated_on>
+        <ui_id>a3a46213-faca-4044-a4e6-91ba6f647488</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=520a4e9a1b6ca81064bf11fc2d4bcb77"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>520a4e9a1b6ca81064bf11fc2d4bcb77</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:41:35</sys_created_on>
+        <sys_id>120a4e9a1b6ca81064bf11fc2d4bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:41:35</sys_updated_on>
+        <value>Result is true</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=520a4e9a1b6ca81064bf11fc2d4bcb77"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>520a4e9a1b6ca81064bf11fc2d4bcb77</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:41:35</sys_created_on>
+        <sys_id>9e0a4e9a1b6ca81064bf11fc2d4bcb79</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 13:13:59</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{40a09add-fa94-4c50-b97a-b594957efb24.result}}=false</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>520a4e9a1b6ca81064bf11fc2d4bcb77</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:41:35</sys_created_on>
+        <sys_id>da0a4e9a1b6ca81064bf11fc2d4bcb79</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:41:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">28f98a9a1b6ca81064bf11fc2d4bcbce</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Sign Transaction">a9f32f231b44a01064bf11fc2d4bcb14</flow>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>3.2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a3a46213-faca-4044-a4e6-91ba6f647488</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:41:35</sys_created_on>
+        <sys_id>d20a4e9a1b6ca81064bf11fc2d4bcb74</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 15:03:17</sys_updated_on>
+        <ui_id>f9fdc536-b954-4a0d-a975-29cb7ae4a90a</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=d20a4e9a1b6ca81064bf11fc2d4bcb74"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_a9f32f231b44a01064bf11fc2d4bcb14^sys_idNOT INf61aba00db6c2410969430d8689619e5"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>payload2</element>

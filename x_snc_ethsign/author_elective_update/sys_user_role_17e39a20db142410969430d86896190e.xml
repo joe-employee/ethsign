@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_snc_ethsign.mapping_user</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>mapping_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 13:39:43</sys_created_on>
+        <sys_id>17e39a20db142410969430d86896190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_ethsign.mapping_user</sys_name>
+        <sys_package display_value="EthSign" source="x_snc_ethsign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name>sys_user_role_17e39a20db142410969430d86896190e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 13:39:43</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</application>
+        <file_path/>
+        <instance_id>1030efb5db3c9050566750b6f496193d</instance_id>
+        <instance_name>ethereum2</instance_name>
+        <name>sys_user_role_17e39a20db142410969430d86896190e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>x_snc_ethsign.mapping_user</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix>mapping_user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-11-02 13:39:43</sys_created_on><sys_id>17e39a20db142410969430d86896190e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_ethsign.mapping_user</sys_name><sys_package display_value="EthSign" source="x_snc_ethsign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_package><sys_policy/><sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope><sys_update_name>sys_user_role_17e39a20db142410969430d86896190e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-11-02 13:39:43</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>-293166606</payload_hash>
+        <record_name>x_snc_ethsign.mapping_user</record_name>
+        <reverted_from/>
+        <source>b6fdd52c1b50241064bf11fc2d4bcb9b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 13:39:43</sys_created_on>
+        <sys_id>53e39a20db142410969430d868961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>175892f5a4f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 13:39:43</sys_updated_on>
+        <type>Role</type>
+        <update_guid>9be39a20a9142410691f11deffd6e511</update_guid>
+        <update_guid_history>9be39a20a9142410691f11deffd6e511:-293166606</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_snc_ethsign.mapping_user">c9d49588dbf4e010969430d8689619dc</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 16:18:29</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>d21544020fb9479e9e49a4ad1a259e69</sys_id>
+        <sys_metadata>17e39a20db142410969430d86896190e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_ethsign.mapping_user</sys_name>
+        <sys_package display_value="EthSign" source="x_snc_ethsign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_scope_delete display_value="">55e628e5c62a4e43a1b2d8d11ec34501</sys_scope_delete>
+        <sys_update_name>sys_user_role_17e39a20db142410969430d86896190e</sys_update_name>
+        <sys_update_version display_value="sys_user_role_17e39a20db142410969430d86896190e">53e39a20db142410969430d868961912</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 16:18:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Key" max_length="40" name="x_snc_ethsign_key" sizeclass="1" type="collection">
+    <element label="Key" max_length="40" name="x_snc_ethsign_key" sizeclass="3" type="collection">
         <element display="true" label="Address" max_length="100" name="address" type="string"/>
         <element label="Private Key" max_length="100" name="private_key" type="string"/>
     </element>

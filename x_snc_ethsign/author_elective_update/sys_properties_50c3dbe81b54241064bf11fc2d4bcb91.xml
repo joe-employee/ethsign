@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="DELETE">
+        <choices/>
+        <description/>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_snc_ethsign.glide.sm.default_mode</name>
+        <read_roles/>
+        <suffix>glide.sm.default_mode</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 18:19:00</sys_created_on>
+        <sys_id>50c3dbe81b54241064bf11fc2d4bcb91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_ethsign.glide.sm.default_mode</sys_name>
+        <sys_package display_value="EthSign" source="x_snc_ethsign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name>sys_properties_50c3dbe81b54241064bf11fc2d4bcb91</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 18:19:00</sys_updated_on>
+        <type>string</type>
+        <value>allow</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="DELETE" query="documentkey=50c3dbe81b54241064bf11fc2d4bcb91"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</application>
+        <file_path/>
+        <instance_id>1030efb5db3c9050566750b6f496193d</instance_id>
+        <instance_name>ethereum2</instance_name>
+        <name>sys_properties_50c3dbe81b54241064bf11fc2d4bcb91</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description/><ignore_cache>false</ignore_cache><is_private>false</is_private><name>x_snc_ethsign.glide.sm.default_mode</name><read_roles/><suffix>glide.sm.default_mode</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2020-11-02 18:19:00</sys_created_on><sys_id>50c3dbe81b54241064bf11fc2d4bcb91</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_ethsign.glide.sm.default_mode</sys_name><sys_package display_value="EthSign" source="x_snc_ethsign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_package><sys_policy/><sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope><sys_update_name>sys_properties_50c3dbe81b54241064bf11fc2d4bcb91</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2020-11-02 18:19:00</sys_updated_on><type>string</type><value>allow</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=50c3dbe81b54241064bf11fc2d4bcb91"/></record_update>]]></payload>
+        <payload_hash>1708230973</payload_hash>
+        <record_name>x_snc_ethsign.glide.sm.default_mode</record_name>
+        <reverted_from/>
+        <source>b6fdd52c1b50241064bf11fc2d4bcb9b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-02 18:19:02</sys_created_on>
+        <sys_id>bad31fe81b54241064bf11fc2d4bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1758a2f157e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-02 18:19:02</sys_updated_on>
+        <type>System Property</type>
+        <update_guid>72d397e810542410e8ddd65310698d10</update_guid>
+        <update_guid_history>72d397e810542410e8ddd65310698d10:1708230973</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-25 14:26:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties">sys_properties</sys_db_object>
+        <sys_id>6c41106fa04f42568d1f729e6e7ab704</sys_id>
+        <sys_metadata>50c3dbe81b54241064bf11fc2d4bcb91</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_ethsign.glide.sm.default_mode</sys_name>
+        <sys_package display_value="EthSign" source="x_snc_ethsign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_scope_delete display_value="">55e628e5c62a4e43a1b2d8d11ec34501</sys_scope_delete>
+        <sys_update_name>sys_properties_50c3dbe81b54241064bf11fc2d4bcb91</sys_update_name>
+        <sys_update_version display_value="sys_properties_50c3dbe81b54241064bf11fc2d4bcb91">bad31fe81b54241064bf11fc2d4bcb7a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-25 14:26:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
