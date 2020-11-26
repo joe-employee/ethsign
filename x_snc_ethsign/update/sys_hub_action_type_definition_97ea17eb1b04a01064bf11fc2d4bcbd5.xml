@@ -12,8 +12,8 @@
         <description/>
         <ih_action>false</ih_action>
         <internal_name>sign_transaction</internal_name>
-        <label_cache>[{"name":"{{action.from}}","label":"action➛from","type":"action","ref":""},{"name":"{{action.to}}","label":"action➛to","type":"action","ref":""},{"name":"{{action.gas}}","label":"action➛gas","type":"action","ref":""},{"name":"{{action.gasprice}}","label":"action➛gasprice","type":"action","ref":""},{"name":"{{action.value}}","label":"action➛value","type":"action","ref":""},{"name":"{{action.nonce}}","label":"action➛nonce","type":"action","ref":""},{"name":"{{action.data}}","label":"action➛data","type":"action","ref":""},{"name":"{{action.chainid}}","label":"action➛chainid","type":"action","ref":""},{"name":"{{action.payload2}}","label":"action➛payload2","type":"action","ref":""},{"name":"{{step[2880e4ba-0928-400d-ad9b-06141b281096].variable}}","label":"step➛Script step➛variable","type":"step","ref":""},{"name":"{{step[2880e4ba-0928-400d-ad9b-06141b281096].txraw}}","label":"step➛Script step➛txraw","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>5f040f41dbe8a410969430d868961924</latest_snapshot>
+        <label_cache>[{"name":"{{action.from}}","label":"action➛from","type":"action","ref":""},{"name":"{{action.to}}","label":"action➛to","type":"action","ref":""},{"name":"{{action.gas}}","label":"action➛gas","type":"action","ref":""},{"name":"{{action.gasprice}}","label":"action➛gasprice","type":"action","ref":""},{"name":"{{action.value}}","label":"action➛value","type":"action","ref":""},{"name":"{{action.nonce}}","label":"action➛nonce","type":"action","ref":""},{"name":"{{action.data}}","label":"action➛data","type":"action","ref":""},{"name":"{{action.chainid}}","label":"action➛chainid","type":"action","ref":""},{"name":"{{action.payload2}}","label":"action➛payload2","type":"action","ref":""},{"name":"{{action.key}}","label":"action➛key","type":"action","ref":""},{"name":"{{step[2880e4ba-0928-400d-ad9b-06141b281096].variable}}","label":"step➛Script step➛variable","type":"step","ref":""},{"name":"{{step[2880e4ba-0928-400d-ad9b-06141b281096].txraw}}","label":"step➛Script step➛txraw","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>c5e94a9a1b6ca81064bf11fc2d4bcb92</latest_snapshot>
         <master_snapshot>83ee9f6f1b04a01064bf11fc2d4bcb26</master_snapshot>
         <name>Sign Transaction</name>
         <natlang/>
@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>97ea17eb1b04a01064bf11fc2d4bcbd5</sys_id>
-        <sys_mod_count>174</sys_mod_count>
+        <sys_mod_count>179</sys_mod_count>
         <sys_name>Sign Transaction</sys_name>
         <sys_overrides/>
         <sys_package display_value="EthSign" source="x_snc_ethsign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_97ea17eb1b04a01064bf11fc2d4bcbd5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-16 16:42:40</sys_updated_on>
+        <sys_updated_on>2020-11-20 09:40:59</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -70,10 +70,10 @@
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 16:25:54</sys_created_on>
         <sys_id>983ddb2f1b04a01064bf11fc2d4bcbea</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>43</sys_mod_count>
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-16 16:42:35</sys_updated_on>
+        <sys_updated_on>2020-11-20 09:40:53</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=983ddb2f1b04a01064bf11fc2d4bcbea"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -98,25 +98,16 @@
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 16:25:55</sys_created_on>
         <sys_id>ac3d1f2f1b04a01064bf11fc2d4bcb2c</sys_id>
-        <sys_mod_count>40</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-16 16:42:35</sys_updated_on>
+        <sys_updated_on>2020-11-20 09:40:53</sys_updated_on>
         <value>(function execute(inputs, outputs) {
-
-gs.info("HERE: " + inputs.payload2.toString());
   
 gs.include("ethjs-signer");
 
 var payload2 = JSON.parse(inputs.payload2.toString());
   
-var gr = new GlideRecord('x_snc_ethsign_key');
-gr.addQuery('address',payload2.from.toString());
-gr.query();
-if (gr.next()) {
-  var pk = gr.private_key;
-}
-  
-outputs.txraw = ethSigner.sign(payload2, pk.toString(), false);
+outputs.txraw = ethSigner.sign(payload2, inputs.key.private_key.toString(), false);
   
 gs.info(outputs.txraw);
 })(inputs, outputs);
@@ -197,6 +188,18 @@ gs.info(outputs.txraw);
         <value>{{action.gasprice}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>key</field>
+        <id>983ddb2f1b04a01064bf11fc2d4bcbea</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:40:53</sys_created_on>
+        <sys_id>4ce94a9a1b6ca81064bf11fc2d4bcb0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:40:53</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_983ddb2f1b04a01064bf11fc2d4bcbea</table>
+        <value>{{action.key}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>nonce</field>
         <id>983ddb2f1b04a01064bf11fc2d4bcbea</id>
         <sys_created_by>admin2</sys_created_by>
@@ -268,7 +271,7 @@ gs.info(outputs.txraw);
         <table>var__m_sys_hub_step_ext_input_983ddb2f1b04a01064bf11fc2d4bcbea</table>
         <value>{{action.value}}</value>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=983ddb2f1b04a01064bf11fc2d4bcbea^sys_idNOT IN03220b01dbe8a410969430d868961987"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=983ddb2f1b04a01064bf11fc2d4bcbea^sys_idNOT IN03220b01dbe8a410969430d868961987,4ce94a9a1b6ca81064bf11fc2d4bcb00"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -339,6 +342,87 @@ gs.info(outputs.txraw);
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-11-16 16:34:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>key</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">983ddb2f1b04a01064bf11fc2d4bcbea</model>
+        <model_id>983ddb2f1b04a01064bf11fc2d4bcbea</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_983ddb2f1b04a01064bf11fc2d4bcbea</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:40:52</sys_created_on>
+        <sys_id>4ce94a9a1b6ca81064bf11fc2d4bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:40:52</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -432,7 +516,88 @@ gs.info(outputs.txraw);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_action_input action="delete_multiple" query="model=97ea17eb1b04a01064bf11fc2d4bcbd5^sys_idNOT IN57e38b41dbe8a410969430d868961973"/>
+    <sys_hub_action_input action="delete_multiple" query="model=97ea17eb1b04a01064bf11fc2d4bcbd5^sys_idNOT IN04e9069a1b6ca81064bf11fc2d4bcbd3,57e38b41dbe8a410969430d868961973"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=0b01f7dd-ca48-4d36-80cb-d15ffc52e2ea</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>key</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>key</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Sign Transaction">97ea17eb1b04a01064bf11fc2d4bcbd5</model>
+        <model_id>97ea17eb1b04a01064bf11fc2d4bcbd5</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_97ea17eb1b04a01064bf11fc2d4bcbd5</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_ethsign_key">x_snc_ethsign_key</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:40:52</sys_created_on>
+        <sys_id>04e9069a1b6ca81064bf11fc2d4bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:40:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -615,10 +780,10 @@ gs.info(outputs.txraw);
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 16:25:54</sys_created_on>
         <sys_id>983ddb2f1b04a01064bf11fc2d4bcbea</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>43</sys_mod_count>
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-16 16:42:35</sys_updated_on>
+        <sys_updated_on>2020-11-20 09:40:53</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=983ddb2f1b04a01064bf11fc2d4bcbea"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -643,25 +808,16 @@ gs.info(outputs.txraw);
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 16:25:55</sys_created_on>
         <sys_id>ac3d1f2f1b04a01064bf11fc2d4bcb2c</sys_id>
-        <sys_mod_count>40</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-16 16:42:35</sys_updated_on>
+        <sys_updated_on>2020-11-20 09:40:53</sys_updated_on>
         <value>(function execute(inputs, outputs) {
-
-gs.info("HERE: " + inputs.payload2.toString());
   
 gs.include("ethjs-signer");
 
 var payload2 = JSON.parse(inputs.payload2.toString());
   
-var gr = new GlideRecord('x_snc_ethsign_key');
-gr.addQuery('address',payload2.from.toString());
-gr.query();
-if (gr.next()) {
-  var pk = gr.private_key;
-}
-  
-outputs.txraw = ethSigner.sign(payload2, pk.toString(), false);
+outputs.txraw = ethSigner.sign(payload2, inputs.key.private_key.toString(), false);
   
 gs.info(outputs.txraw);
 })(inputs, outputs);
@@ -742,6 +898,18 @@ gs.info(outputs.txraw);
         <value>{{action.gasprice}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>key</field>
+        <id>983ddb2f1b04a01064bf11fc2d4bcbea</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:40:53</sys_created_on>
+        <sys_id>4ce94a9a1b6ca81064bf11fc2d4bcb0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:40:53</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_983ddb2f1b04a01064bf11fc2d4bcbea</table>
+        <value>{{action.key}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>nonce</field>
         <id>983ddb2f1b04a01064bf11fc2d4bcbea</id>
         <sys_created_by>admin2</sys_created_by>
@@ -813,7 +981,7 @@ gs.info(outputs.txraw);
         <table>var__m_sys_hub_step_ext_input_983ddb2f1b04a01064bf11fc2d4bcbea</table>
         <value>{{action.value}}</value>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=983ddb2f1b04a01064bf11fc2d4bcbea^sys_idNOT IN03220b01dbe8a410969430d868961987"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=983ddb2f1b04a01064bf11fc2d4bcbea^sys_idNOT IN03220b01dbe8a410969430d868961987,4ce94a9a1b6ca81064bf11fc2d4bcb00"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -884,6 +1052,87 @@ gs.info(outputs.txraw);
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-11-16 16:34:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>key</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">983ddb2f1b04a01064bf11fc2d4bcbea</model>
+        <model_id>983ddb2f1b04a01064bf11fc2d4bcbea</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_983ddb2f1b04a01064bf11fc2d4bcbea</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:40:52</sys_created_on>
+        <sys_id>4ce94a9a1b6ca81064bf11fc2d4bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:40:52</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -977,7 +1226,7 @@ gs.info(outputs.txraw);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_97ea17eb1b04a01064bf11fc2d4bcbd5^sys_idNOT IN13e38b41dbe8a410969430d868961978"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_97ea17eb1b04a01064bf11fc2d4bcbd5^sys_idNOT IN13e38b41dbe8a410969430d868961978,44e90a9a1b6ca81064bf11fc2d4bcbf9"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>payload2</element>
         <help/>
@@ -998,6 +1247,29 @@ gs.info(outputs.txraw);
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-11-16 16:42:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>key</element>
+        <help/>
+        <hint/>
+        <label>key</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_97ea17eb1b04a01064bf11fc2d4bcbd5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:40:52</sys_created_on>
+        <sys_id>44e90a9a1b6ca81064bf11fc2d4bcbf9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="EthSign" source="x_snc_ethsign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:40:52</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -1029,17 +1301,17 @@ gs.info(outputs.txraw);
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Sign Transaction">97ea17eb1b04a01064bf11fc2d4bcbd5</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"01fedf6f1b04a01064bf11fc2d4bcb39","name":"plan"}}</plan>
-        <snapshot>5f040f41dbe8a410969430d868961924</snapshot>
+        <snapshot>c5e94a9a1b6ca81064bf11fc2d4bcb92</snapshot>
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 16:33:36</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>01fedf6f1b04a01064bf11fc2d4bcb39</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-16 16:42:42</sys_updated_on>
+        <sys_updated_on>2020-11-20 09:41:01</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>package_private</access>
@@ -1052,7 +1324,7 @@ gs.info(outputs.txraw);
         <copied_from_name/>
         <description/>
         <internal_name>sign_transaction</internal_name>
-        <label_cache>[{"name":"{{action.from}}","label":"action➛from","type":"action","ref":""},{"name":"{{action.to}}","label":"action➛to","type":"action","ref":""},{"name":"{{action.gas}}","label":"action➛gas","type":"action","ref":""},{"name":"{{action.gasprice}}","label":"action➛gasprice","type":"action","ref":""},{"name":"{{action.value}}","label":"action➛value","type":"action","ref":""},{"name":"{{action.nonce}}","label":"action➛nonce","type":"action","ref":""},{"name":"{{action.data}}","label":"action➛data","type":"action","ref":""},{"name":"{{action.chainid}}","label":"action➛chainid","type":"action","ref":""},{"name":"{{action.payload2}}","label":"action➛payload2","type":"action","ref":""},{"name":"{{step[2880e4ba-0928-400d-ad9b-06141b281096].variable}}","label":"step➛Script step➛variable","type":"step","ref":""},{"name":"{{step[2880e4ba-0928-400d-ad9b-06141b281096].txraw}}","label":"step➛Script step➛txraw","type":"step","ref":""}]</label_cache>
+        <label_cache>[{"name":"{{action.from}}","label":"action➛from","type":"action","ref":""},{"name":"{{action.to}}","label":"action➛to","type":"action","ref":""},{"name":"{{action.gas}}","label":"action➛gas","type":"action","ref":""},{"name":"{{action.gasprice}}","label":"action➛gasprice","type":"action","ref":""},{"name":"{{action.value}}","label":"action➛value","type":"action","ref":""},{"name":"{{action.nonce}}","label":"action➛nonce","type":"action","ref":""},{"name":"{{action.data}}","label":"action➛data","type":"action","ref":""},{"name":"{{action.chainid}}","label":"action➛chainid","type":"action","ref":""},{"name":"{{action.payload2}}","label":"action➛payload2","type":"action","ref":""},{"name":"{{action.key}}","label":"action➛key","type":"action","ref":""},{"name":"{{step[2880e4ba-0928-400d-ad9b-06141b281096].variable}}","label":"step➛Script step➛variable","type":"step","ref":""},{"name":"{{step[2880e4ba-0928-400d-ad9b-06141b281096].txraw}}","label":"step➛Script step➛txraw","type":"step","ref":""}]</label_cache>
         <master>true</master>
         <name>Sign Transaction</name>
         <natlang/>
@@ -1065,7 +1337,7 @@ gs.info(outputs.txraw);
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>83ee9f6f1b04a01064bf11fc2d4bcb26</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1073,7 +1345,7 @@ gs.info(outputs.txraw);
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-16 16:34:33</sys_updated_on>
+        <sys_updated_on>2020-11-20 09:40:58</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -1109,10 +1381,10 @@ gs.info(outputs.txraw);
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 16:33:30</sys_created_on>
         <sys_id>73ee9f6f1b04a01064bf11fc2d4bcb6c</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-16 16:42:40</sys_updated_on>
+        <sys_updated_on>2020-11-20 09:40:59</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=73ee9f6f1b04a01064bf11fc2d4bcb6c"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1123,25 +1395,16 @@ gs.info(outputs.txraw);
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 16:33:33</sys_created_on>
         <sys_id>20fe9f6f1b04a01064bf11fc2d4bcbc8</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-16 16:42:40</sys_updated_on>
+        <sys_updated_on>2020-11-20 09:40:59</sys_updated_on>
         <value>(function execute(inputs, outputs) {
-
-gs.info("HERE: " + inputs.payload2.toString());
   
 gs.include("ethjs-signer");
 
 var payload2 = JSON.parse(inputs.payload2.toString());
   
-var gr = new GlideRecord('x_snc_ethsign_key');
-gr.addQuery('address',payload2.from.toString());
-gr.query();
-if (gr.next()) {
-  var pk = gr.private_key;
-}
-  
-outputs.txraw = ethSigner.sign(payload2, pk.toString(), false);
+outputs.txraw = ethSigner.sign(payload2, inputs.key.private_key.toString(), false);
   
 gs.info(outputs.txraw);
 })(inputs, outputs);
@@ -1236,6 +1499,18 @@ gs.info(outputs.txraw);
         <value>{{action.gasprice}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>key</field>
+        <id>73ee9f6f1b04a01064bf11fc2d4bcb6c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:40:59</sys_created_on>
+        <sys_id>e9e94a9a1b6ca81064bf11fc2d4bcbe2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:40:59</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_73ee9f6f1b04a01064bf11fc2d4bcb6c</table>
+        <value>{{action.key}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>nonce</field>
         <id>73ee9f6f1b04a01064bf11fc2d4bcb6c</id>
         <sys_created_by>admin2</sys_created_by>
@@ -1307,7 +1582,7 @@ gs.info(outputs.txraw);
         <table>var__m_sys_hub_step_ext_input_73ee9f6f1b04a01064bf11fc2d4bcb6c</table>
         <value>{{action.value}}</value>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=73ee9f6f1b04a01064bf11fc2d4bcb6c^sys_idNOT IN85324b01dbe8a410969430d868961978"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=73ee9f6f1b04a01064bf11fc2d4bcb6c^sys_idNOT IN85324b01dbe8a410969430d868961978,ede94a9a1b6ca81064bf11fc2d4bcbd6"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1378,6 +1653,87 @@ gs.info(outputs.txraw);
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-11-16 16:34:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>key</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>key</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">73ee9f6f1b04a01064bf11fc2d4bcb6c</model>
+        <model_id>73ee9f6f1b04a01064bf11fc2d4bcb6c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_73ee9f6f1b04a01064bf11fc2d4bcb6c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:40:59</sys_created_on>
+        <sys_id>ede94a9a1b6ca81064bf11fc2d4bcbd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:40:59</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1471,7 +1827,88 @@ gs.info(outputs.txraw);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_action_input action="delete_multiple" query="model=83ee9f6f1b04a01064bf11fc2d4bcb26^sys_idNOT INf3040f41dbe8a410969430d868961954"/>
+    <sys_hub_action_input action="delete_multiple" query="model=83ee9f6f1b04a01064bf11fc2d4bcb26^sys_idNOT INa9e94a9a1b6ca81064bf11fc2d4bcbca,f3040f41dbe8a410969430d868961954"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=0b01f7dd-ca48-4d36-80cb-d15ffc52e2ea</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>key</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>key</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Sign Transaction">83ee9f6f1b04a01064bf11fc2d4bcb26</model>
+        <model_id>83ee9f6f1b04a01064bf11fc2d4bcb26</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_83ee9f6f1b04a01064bf11fc2d4bcb26</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_ethsign_key">x_snc_ethsign_key</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:40:58</sys_created_on>
+        <sys_id>a9e94a9a1b6ca81064bf11fc2d4bcbca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:40:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1654,10 +2091,10 @@ gs.info(outputs.txraw);
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 16:33:30</sys_created_on>
         <sys_id>73ee9f6f1b04a01064bf11fc2d4bcb6c</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-16 16:42:40</sys_updated_on>
+        <sys_updated_on>2020-11-20 09:40:59</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=73ee9f6f1b04a01064bf11fc2d4bcb6c"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1668,25 +2105,16 @@ gs.info(outputs.txraw);
         <sys_created_by>admin2</sys_created_by>
         <sys_created_on>2020-10-30 16:33:33</sys_created_on>
         <sys_id>20fe9f6f1b04a01064bf11fc2d4bcbc8</sys_id>
-        <sys_mod_count>29</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-11-16 16:42:40</sys_updated_on>
+        <sys_updated_on>2020-11-20 09:40:59</sys_updated_on>
         <value>(function execute(inputs, outputs) {
-
-gs.info("HERE: " + inputs.payload2.toString());
   
 gs.include("ethjs-signer");
 
 var payload2 = JSON.parse(inputs.payload2.toString());
   
-var gr = new GlideRecord('x_snc_ethsign_key');
-gr.addQuery('address',payload2.from.toString());
-gr.query();
-if (gr.next()) {
-  var pk = gr.private_key;
-}
-  
-outputs.txraw = ethSigner.sign(payload2, pk.toString(), false);
+outputs.txraw = ethSigner.sign(payload2, inputs.key.private_key.toString(), false);
   
 gs.info(outputs.txraw);
 })(inputs, outputs);
@@ -1781,6 +2209,18 @@ gs.info(outputs.txraw);
         <value>{{action.gasprice}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>key</field>
+        <id>73ee9f6f1b04a01064bf11fc2d4bcb6c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:40:59</sys_created_on>
+        <sys_id>e9e94a9a1b6ca81064bf11fc2d4bcbe2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:40:59</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_73ee9f6f1b04a01064bf11fc2d4bcb6c</table>
+        <value>{{action.key}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>nonce</field>
         <id>73ee9f6f1b04a01064bf11fc2d4bcb6c</id>
         <sys_created_by>admin2</sys_created_by>
@@ -1852,7 +2292,7 @@ gs.info(outputs.txraw);
         <table>var__m_sys_hub_step_ext_input_73ee9f6f1b04a01064bf11fc2d4bcb6c</table>
         <value>{{action.value}}</value>
     </sys_element_mapping>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=73ee9f6f1b04a01064bf11fc2d4bcb6c^sys_idNOT IN85324b01dbe8a410969430d868961978"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=73ee9f6f1b04a01064bf11fc2d4bcb6c^sys_idNOT IN85324b01dbe8a410969430d868961978,ede94a9a1b6ca81064bf11fc2d4bcbd6"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1923,6 +2363,87 @@ gs.info(outputs.txraw);
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2020-11-16 16:34:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>key</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>key</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">73ee9f6f1b04a01064bf11fc2d4bcb6c</model>
+        <model_id>73ee9f6f1b04a01064bf11fc2d4bcb6c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_73ee9f6f1b04a01064bf11fc2d4bcb6c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:40:59</sys_created_on>
+        <sys_id>ede94a9a1b6ca81064bf11fc2d4bcbd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:40:59</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2016,7 +2537,30 @@ gs.info(outputs.txraw);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_83ee9f6f1b04a01064bf11fc2d4bcb26^sys_idNOT INbf040f41dbe8a410969430d868961958"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_83ee9f6f1b04a01064bf11fc2d4bcb26^sys_idNOT IN29e94a9a1b6ca81064bf11fc2d4bcbcf,bf040f41dbe8a410969430d868961958"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>key</element>
+        <help/>
+        <hint/>
+        <label>key</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_83ee9f6f1b04a01064bf11fc2d4bcb26</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-20 09:40:59</sys_created_on>
+        <sys_id>29e94a9a1b6ca81064bf11fc2d4bcbcf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="EthSign" source="x_snc_ethsign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-20 09:40:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>payload2</element>
         <help/>

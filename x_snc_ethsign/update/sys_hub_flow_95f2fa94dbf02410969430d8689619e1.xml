@@ -1,0 +1,1259 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-orlando-12-11-2019__patch8-hotfix1-10-16-2020</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>create_new_key_and_account</internal_name>
+        <label_cache>[{"name":"subflow.entropy","label":"Input➛entropy","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"2d884575-0972-4dae-9351-aafadf1beeca"}},{"name":"210a65ec-1f12-42d0-b9e1-526451171731.account","label":"2➛account","reference":"x_snc_ethsign_account","reference_display":"Account","type":"reference","base_type":"reference","attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"9849cf74-cb4b-4d8a-ac5e-86106f0b2f7c"}},{"name":"e71b31f6-d040-4905-9f4e-5e44daee6f3e.key","label":"1➛key","reference":"x_snc_ethsign_key","reference_display":"Key","type":"reference","base_type":"reference","attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"4bce3517-a726-40ab-bcc5-9160b9d73af1"}}]</label_cache>
+        <latest_snapshot>c5f37ed4dbf02410969430d868961990</latest_snapshot>
+        <master_snapshot>988376d4dbf02410969430d8689619ac</master_snapshot>
+        <name>Create New Key and Account</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:48:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>95f2fa94dbf02410969430d8689619e1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Create New Key and Account</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="EthSign" source="x_snc_ethsign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name>sys_hub_flow_95f2fa94dbf02410969430d8689619e1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:39</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=95f2fa94dbf02410969430d8689619e1"/>
+    <sys_variable_value action="delete_multiple" query="document_key=95f2fa94dbf02410969430d8689619e1"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=95f2fa94dbf02410969430d8689619e1^sys_idNOT IN477336d4dbf02410969430d8689619e2,877376d4dbf02410969430d868961918,cb7376d4dbf02410969430d868961916"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Generate New Key">ea95ea5cdbb02410969430d868961970</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>ea95ea5cdbb02410969430d868961970</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create New Key and Account">95f2fa94dbf02410969430d8689619e1</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:31</sys_created_on>
+        <sys_id>477336d4dbf02410969430d8689619e2</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:52:36</sys_updated_on>
+        <ui_id>e71b31f6-d040-4905-9f4e-5e44daee6f3e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=477336d4dbf02410969430d8689619e2"/>
+    <sys_element_mapping action="delete_multiple" query="id=477336d4dbf02410969430d8689619e2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>entropy</field>
+        <id>477336d4dbf02410969430d8689619e2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:31</sys_created_on>
+        <sys_id>8f7376d4dbf02410969430d868961914</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ea95ea5cdbb02410969430d868961970</table>
+        <value>{{subflow.entropy}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">cb7376d4dbf02410969430d868961917</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create New Key and Account">95f2fa94dbf02410969430d8689619e1</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>key,account</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:31</sys_created_on>
+        <sys_id>877376d4dbf02410969430d868961918</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:39</sys_updated_on>
+        <ui_id>4f43c839-83ef-4ec2-9724-a1fd63fc333f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=877376d4dbf02410969430d868961918"/>
+    <sys_element_mapping action="delete_multiple" query="id=877376d4dbf02410969430d868961918"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>account</field>
+        <id>877376d4dbf02410969430d868961918</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:31</sys_created_on>
+        <sys_id>437376d4dbf02410969430d86896191b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:31</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_95f2fa94dbf02410969430d8689619e1</table>
+        <value>{{210a65ec-1f12-42d0-b9e1-526451171731.account}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>key</field>
+        <id>877376d4dbf02410969430d868961918</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:31</sys_created_on>
+        <sys_id>077376d4dbf02410969430d86896191b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:31</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_95f2fa94dbf02410969430d8689619e1</table>
+        <value>{{e71b31f6-d040-4905-9f4e-5e44daee6f3e.key}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Generate New Account">ca48aadcdbb02410969430d8689619b3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>ca48aadcdbb02410969430d8689619b3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create New Key and Account">95f2fa94dbf02410969430d8689619e1</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:31</sys_created_on>
+        <sys_id>cb7376d4dbf02410969430d868961916</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:52:36</sys_updated_on>
+        <ui_id>210a65ec-1f12-42d0-b9e1-526451171731</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cb7376d4dbf02410969430d868961916"/>
+    <sys_element_mapping action="delete_multiple" query="id=cb7376d4dbf02410969430d868961916"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>key</field>
+        <id>cb7376d4dbf02410969430d868961916</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:31</sys_created_on>
+        <sys_id>0b7376d4dbf02410969430d868961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ca48aadcdbb02410969430d8689619b3</table>
+        <value>{{e71b31f6-d040-4905-9f4e-5e44daee6f3e.key}}</value>
+    </sys_element_mapping>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=95f2fa94dbf02410969430d8689619e1^sys_idNOT IN59f2fa94dbf02410969430d8689619e2"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>95f2fa94dbf02410969430d8689619e1</id>
+        <name>Create New Key and Account</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:48:13</sys_created_on>
+        <sys_id>59f2fa94dbf02410969430d8689619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:48:13</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=95f2fa94dbf02410969430d8689619e1^sys_idNOT INb27336d4dbf02410969430d86896194a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2d884575-0972-4dae-9351-aafadf1beeca</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>entropy</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>entropy</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create New Key and Account">95f2fa94dbf02410969430d8689619e1</model>
+        <model_id>95f2fa94dbf02410969430d8689619e1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_95f2fa94dbf02410969430d8689619e1</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:30</sys_created_on>
+        <sys_id>b27336d4dbf02410969430d86896194a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=95f2fa94dbf02410969430d8689619e1^sys_idNOT IN077336d4dbf02410969430d8689619d6,3a7336d4dbf02410969430d8689619cd"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=bb05dbc0-968f-44da-83df-22208c729d57</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>account</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>account</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create New Key and Account">95f2fa94dbf02410969430d8689619e1</model>
+        <model_id>95f2fa94dbf02410969430d8689619e1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_95f2fa94dbf02410969430d8689619e1</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_ethsign_account">x_snc_ethsign_account</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:31</sys_created_on>
+        <sys_id>077336d4dbf02410969430d8689619d6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=25afc5c2-8dce-4840-8872-fbea49d201cd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>key</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>key</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create New Key and Account">95f2fa94dbf02410969430d8689619e1</model>
+        <model_id>95f2fa94dbf02410969430d8689619e1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_95f2fa94dbf02410969430d8689619e1</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_ethsign_key">x_snc_ethsign_key</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:31</sys_created_on>
+        <sys_id>3a7336d4dbf02410969430d8689619cd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_instance action="delete_multiple" query="flow=95f2fa94dbf02410969430d8689619e1^sys_idNOT IN477336d4dbf02410969430d8689619e2,cb7376d4dbf02410969430d868961916"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Generate New Key">ea95ea5cdbb02410969430d868961970</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>ea95ea5cdbb02410969430d868961970</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create New Key and Account">95f2fa94dbf02410969430d8689619e1</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:31</sys_created_on>
+        <sys_id>477336d4dbf02410969430d8689619e2</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:52:36</sys_updated_on>
+        <ui_id>e71b31f6-d040-4905-9f4e-5e44daee6f3e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=477336d4dbf02410969430d8689619e2"/>
+    <sys_element_mapping action="delete_multiple" query="id=477336d4dbf02410969430d8689619e2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>entropy</field>
+        <id>477336d4dbf02410969430d8689619e2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:31</sys_created_on>
+        <sys_id>8f7376d4dbf02410969430d868961914</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ea95ea5cdbb02410969430d868961970</table>
+        <value>{{subflow.entropy}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Generate New Account">ca48aadcdbb02410969430d8689619b3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>ca48aadcdbb02410969430d8689619b3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create New Key and Account">95f2fa94dbf02410969430d8689619e1</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:31</sys_created_on>
+        <sys_id>cb7376d4dbf02410969430d868961916</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:52:36</sys_updated_on>
+        <ui_id>210a65ec-1f12-42d0-b9e1-526451171731</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cb7376d4dbf02410969430d868961916"/>
+    <sys_element_mapping action="delete_multiple" query="id=cb7376d4dbf02410969430d868961916"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>key</field>
+        <id>cb7376d4dbf02410969430d868961916</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:31</sys_created_on>
+        <sys_id>0b7376d4dbf02410969430d868961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ca48aadcdbb02410969430d8689619b3</table>
+        <value>{{e71b31f6-d040-4905-9f4e-5e44daee6f3e.key}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=95f2fa94dbf02410969430d8689619e1^sys_idNOT IN877376d4dbf02410969430d868961918"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">cb7376d4dbf02410969430d868961917</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create New Key and Account">95f2fa94dbf02410969430d8689619e1</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>key,account</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:31</sys_created_on>
+        <sys_id>877376d4dbf02410969430d868961918</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:39</sys_updated_on>
+        <ui_id>4f43c839-83ef-4ec2-9724-a1fd63fc333f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=877376d4dbf02410969430d868961918"/>
+    <sys_element_mapping action="delete_multiple" query="id=877376d4dbf02410969430d868961918"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>account</field>
+        <id>877376d4dbf02410969430d868961918</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:31</sys_created_on>
+        <sys_id>437376d4dbf02410969430d86896191b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:31</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_95f2fa94dbf02410969430d8689619e1</table>
+        <value>{{210a65ec-1f12-42d0-b9e1-526451171731.account}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>key</field>
+        <id>877376d4dbf02410969430d868961918</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:31</sys_created_on>
+        <sys_id>077376d4dbf02410969430d86896191b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:31</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_95f2fa94dbf02410969430d8689619e1</table>
+        <value>{{e71b31f6-d040-4905-9f4e-5e44daee6f3e.key}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_95f2fa94dbf02410969430d8689619e1^sys_idNOT INfe7336d4dbf02410969430d8689619ca"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>entropy</element>
+        <help/>
+        <hint/>
+        <label>entropy</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_95f2fa94dbf02410969430d8689619e1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:30</sys_created_on>
+        <sys_id>fe7336d4dbf02410969430d8689619ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="EthSign" source="x_snc_ethsign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_95f2fa94dbf02410969430d8689619e1^sys_idNOT IN4f7336d4dbf02410969430d8689619d4,837336d4dbf02410969430d8689619dd"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>key</element>
+        <help/>
+        <hint/>
+        <label>key</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_95f2fa94dbf02410969430d8689619e1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:31</sys_created_on>
+        <sys_id>4f7336d4dbf02410969430d8689619d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="EthSign" source="x_snc_ethsign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>account</element>
+        <help/>
+        <hint/>
+        <label>account</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_95f2fa94dbf02410969430d8689619e1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:31</sys_created_on>
+        <sys_id>837336d4dbf02410969430d8689619dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="EthSign" source="x_snc_ethsign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=95f2fa94dbf02410969430d8689619e1^sys_idNOT IN7883b6d4dbf02410969430d868961917"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"7883b6d4dbf02410969430d868961917","name":"plan"}}</plan>
+        <plan_id display_value="Create New Key and Account">95f2fa94dbf02410969430d8689619e1</plan_id>
+        <snapshot>c5f37ed4dbf02410969430d868961990</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7883b6d4dbf02410969430d868961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:38</sys_updated_on>
+    </sys_flow_subflow_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>create_new_key_and_account</internal_name>
+        <label_cache>[{"name":"subflow.entropy","label":"Input➛entropy","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"2d884575-0972-4dae-9351-aafadf1beeca"}},{"name":"210a65ec-1f12-42d0-b9e1-526451171731.account","label":"2➛account","reference":"x_snc_ethsign_account","reference_display":"Account","type":"reference","base_type":"reference","attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"9849cf74-cb4b-4d8a-ac5e-86106f0b2f7c"}},{"name":"e71b31f6-d040-4905-9f4e-5e44daee6f3e.key","label":"1➛key","reference":"x_snc_ethsign_key","reference_display":"Key","type":"reference","base_type":"reference","attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"4bce3517-a726-40ab-bcc5-9160b9d73af1"}}]</label_cache>
+        <master>true</master>
+        <name>Create New Key and Account</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Create New Key and Account">95f2fa94dbf02410969430d8689619e1</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>988376d4dbf02410969430d8689619ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:36</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=988376d4dbf02410969430d8689619ac"/>
+    <sys_variable_value action="delete_multiple" query="document_key=988376d4dbf02410969430d8689619ac"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=988376d4dbf02410969430d8689619ac^sys_idNOT IN2c8376d4dbf02410969430d8689619f4,688376d4dbf02410969430d8689619df,e08376d4dbf02410969430d8689619e5"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Generate New Account">ca48aadcdbb02410969430d8689619b3</action_type>
+        <action_type_parent display_value="Generate New Account">23c6ea9cdbb02410969430d8689619bd</action_type_parent>
+        <comment/>
+        <compiled_snapshot>ca48aadcdbb02410969430d8689619b3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create New Key and Account">988376d4dbf02410969430d8689619ac</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:38</sys_created_on>
+        <sys_id>2c8376d4dbf02410969430d8689619f4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:38</sys_updated_on>
+        <ui_id>210a65ec-1f12-42d0-b9e1-526451171731</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2c8376d4dbf02410969430d8689619f4"/>
+    <sys_element_mapping action="delete_multiple" query="id=2c8376d4dbf02410969430d8689619f4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>key</field>
+        <id>2c8376d4dbf02410969430d8689619f4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:38</sys_created_on>
+        <sys_id>688376d4dbf02410969430d8689619f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ca48aadcdbb02410969430d8689619b3</table>
+        <value>{{e71b31f6-d040-4905-9f4e-5e44daee6f3e.key}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">cb7376d4dbf02410969430d868961917</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create New Key and Account">988376d4dbf02410969430d8689619ac</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>key,account</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:37</sys_created_on>
+        <sys_id>688376d4dbf02410969430d8689619df</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:37</sys_updated_on>
+        <ui_id>4f43c839-83ef-4ec2-9724-a1fd63fc333f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=688376d4dbf02410969430d8689619df"/>
+    <sys_element_mapping action="delete_multiple" query="id=688376d4dbf02410969430d8689619df"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>account</field>
+        <id>688376d4dbf02410969430d8689619df</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:37</sys_created_on>
+        <sys_id>a88376d4dbf02410969430d8689619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:37</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_988376d4dbf02410969430d8689619ac</table>
+        <value>{{210a65ec-1f12-42d0-b9e1-526451171731.account}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>key</field>
+        <id>688376d4dbf02410969430d8689619df</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:37</sys_created_on>
+        <sys_id>6c8376d4dbf02410969430d8689619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:37</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_988376d4dbf02410969430d8689619ac</table>
+        <value>{{e71b31f6-d040-4905-9f4e-5e44daee6f3e.key}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Generate New Key">ea95ea5cdbb02410969430d868961970</action_type>
+        <action_type_parent display_value="Generate New Key">4323621cdbb02410969430d868961972</action_type_parent>
+        <comment/>
+        <compiled_snapshot>ea95ea5cdbb02410969430d868961970</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create New Key and Account">988376d4dbf02410969430d8689619ac</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:37</sys_created_on>
+        <sys_id>e08376d4dbf02410969430d8689619e5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:38</sys_updated_on>
+        <ui_id>e71b31f6-d040-4905-9f4e-5e44daee6f3e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e08376d4dbf02410969430d8689619e5"/>
+    <sys_element_mapping action="delete_multiple" query="id=e08376d4dbf02410969430d8689619e5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>entropy</field>
+        <id>e08376d4dbf02410969430d8689619e5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:38</sys_created_on>
+        <sys_id>208376d4dbf02410969430d8689619e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ea95ea5cdbb02410969430d868961970</table>
+        <value>{{subflow.entropy}}</value>
+    </sys_element_mapping>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=988376d4dbf02410969430d8689619ac^sys_idNOT IN548376d4dbf02410969430d8689619ad"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>988376d4dbf02410969430d8689619ac</id>
+        <name>Create New Key and Account</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:36</sys_created_on>
+        <sys_id>548376d4dbf02410969430d8689619ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:36</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=988376d4dbf02410969430d8689619ac^sys_idNOT IN548376d4dbf02410969430d8689619ae"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2d884575-0972-4dae-9351-aafadf1beeca</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>entropy</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>entropy</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create New Key and Account">988376d4dbf02410969430d8689619ac</model>
+        <model_id>988376d4dbf02410969430d8689619ac</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_988376d4dbf02410969430d8689619ac</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:36</sys_created_on>
+        <sys_id>548376d4dbf02410969430d8689619ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=988376d4dbf02410969430d8689619ac^sys_idNOT INd88376d4dbf02410969430d8689619c5,d88376d4dbf02410969430d8689619d1"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=25afc5c2-8dce-4840-8872-fbea49d201cd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>key</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>key</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create New Key and Account">988376d4dbf02410969430d8689619ac</model>
+        <model_id>988376d4dbf02410969430d8689619ac</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_988376d4dbf02410969430d8689619ac</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_ethsign_key">x_snc_ethsign_key</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:36</sys_created_on>
+        <sys_id>d88376d4dbf02410969430d8689619c5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=bb05dbc0-968f-44da-83df-22208c729d57</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>account</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>account</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Create New Key and Account">988376d4dbf02410969430d8689619ac</model>
+        <model_id>988376d4dbf02410969430d8689619ac</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_988376d4dbf02410969430d8689619ac</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_snc_ethsign_account">x_snc_ethsign_account</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:37</sys_created_on>
+        <sys_id>d88376d4dbf02410969430d8689619d1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:37</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_instance action="delete_multiple" query="flow=988376d4dbf02410969430d8689619ac^sys_idNOT IN2c8376d4dbf02410969430d8689619f4,e08376d4dbf02410969430d8689619e5"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Generate New Account">ca48aadcdbb02410969430d8689619b3</action_type>
+        <action_type_parent display_value="Generate New Account">23c6ea9cdbb02410969430d8689619bd</action_type_parent>
+        <comment/>
+        <compiled_snapshot>ca48aadcdbb02410969430d8689619b3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create New Key and Account">988376d4dbf02410969430d8689619ac</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:38</sys_created_on>
+        <sys_id>2c8376d4dbf02410969430d8689619f4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:38</sys_updated_on>
+        <ui_id>210a65ec-1f12-42d0-b9e1-526451171731</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2c8376d4dbf02410969430d8689619f4"/>
+    <sys_element_mapping action="delete_multiple" query="id=2c8376d4dbf02410969430d8689619f4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>key</field>
+        <id>2c8376d4dbf02410969430d8689619f4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:38</sys_created_on>
+        <sys_id>688376d4dbf02410969430d8689619f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ca48aadcdbb02410969430d8689619b3</table>
+        <value>{{e71b31f6-d040-4905-9f4e-5e44daee6f3e.key}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Generate New Key">ea95ea5cdbb02410969430d868961970</action_type>
+        <action_type_parent display_value="Generate New Key">4323621cdbb02410969430d868961972</action_type_parent>
+        <comment/>
+        <compiled_snapshot>ea95ea5cdbb02410969430d868961970</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Create New Key and Account">988376d4dbf02410969430d8689619ac</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:37</sys_created_on>
+        <sys_id>e08376d4dbf02410969430d8689619e5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:38</sys_updated_on>
+        <ui_id>e71b31f6-d040-4905-9f4e-5e44daee6f3e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e08376d4dbf02410969430d8689619e5"/>
+    <sys_element_mapping action="delete_multiple" query="id=e08376d4dbf02410969430d8689619e5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>entropy</field>
+        <id>e08376d4dbf02410969430d8689619e5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:38</sys_created_on>
+        <sys_id>208376d4dbf02410969430d8689619e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ea95ea5cdbb02410969430d868961970</table>
+        <value>{{subflow.entropy}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=988376d4dbf02410969430d8689619ac^sys_idNOT IN688376d4dbf02410969430d8689619df"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">cb7376d4dbf02410969430d868961917</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create New Key and Account">988376d4dbf02410969430d8689619ac</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>key,account</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:37</sys_created_on>
+        <sys_id>688376d4dbf02410969430d8689619df</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:37</sys_updated_on>
+        <ui_id>4f43c839-83ef-4ec2-9724-a1fd63fc333f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=688376d4dbf02410969430d8689619df"/>
+    <sys_element_mapping action="delete_multiple" query="id=688376d4dbf02410969430d8689619df"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>account</field>
+        <id>688376d4dbf02410969430d8689619df</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:37</sys_created_on>
+        <sys_id>a88376d4dbf02410969430d8689619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:37</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_988376d4dbf02410969430d8689619ac</table>
+        <value>{{210a65ec-1f12-42d0-b9e1-526451171731.account}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>key</field>
+        <id>688376d4dbf02410969430d8689619df</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:37</sys_created_on>
+        <sys_id>6c8376d4dbf02410969430d8689619e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:37</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_988376d4dbf02410969430d8689619ac</table>
+        <value>{{e71b31f6-d040-4905-9f4e-5e44daee6f3e.key}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_988376d4dbf02410969430d8689619ac^sys_idNOT IN108376d4dbf02410969430d8689619b3"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>entropy</element>
+        <help/>
+        <hint/>
+        <label>entropy</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_988376d4dbf02410969430d8689619ac</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:36</sys_created_on>
+        <sys_id>108376d4dbf02410969430d8689619b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="EthSign" source="x_snc_ethsign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_988376d4dbf02410969430d8689619ac^sys_idNOT IN148376d4dbf02410969430d8689619cd,248376d4dbf02410969430d8689619d9"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>key</element>
+        <help/>
+        <hint/>
+        <label>key</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_988376d4dbf02410969430d8689619ac</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:37</sys_created_on>
+        <sys_id>148376d4dbf02410969430d8689619cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="EthSign" source="x_snc_ethsign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>account</element>
+        <help/>
+        <hint/>
+        <label>account</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_988376d4dbf02410969430d8689619ac</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-26 17:50:37</sys_created_on>
+        <sys_id>248376d4dbf02410969430d8689619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="EthSign" source="x_snc_ethsign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="EthSign">0997d36b1b04a01064bf11fc2d4bcbfd</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-11-26 17:50:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>
